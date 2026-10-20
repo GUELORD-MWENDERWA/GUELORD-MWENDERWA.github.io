@@ -1,0 +1,377 @@
+# Contenu du portfolio — français (servi à /fr/).
+# Modifier le texte ici, puis lancer : python3 tools/build.py
+
+[meta]
+lang = "fr"
+path = "/fr/"
+og_locale = "fr_FR"
+title = "Guelord Mwenderwa — Ingénieur logiciel à Goma, RDC"
+description = "Je conçois, développe et fais tourner des plateformes pour les écoles et les entreprises de la RDC, et les systèmes embarqués qui leur parlent : Django, React, TypeScript, ESP32 et apprentissage automatique."
+alt_path = "/"
+alt_lang = "en"
+alt_label = "English version"
+alt_short = "EN"
+
+[nav]
+label = "Navigation principale"
+skip = "Aller au contenu"
+home = "Guelord Mwenderwa, accueil"
+work = "Réalisations"
+highlights = "Points forts"
+open_source = "Open source"
+teaching = "Formation"
+about = "Parcours"
+contact = "Contact"
+menu = "Ouvrir le menu"
+theme = "Passer du thème clair au thème sombre"
+email_cta = "M'écrire"
+
+[hero]
+eyebrow = "Ingénieur logiciel · Goma, RDC"
+title_before = "Je construis les logiciels qui font tourner des écoles et des entreprises en RDC, "
+title_accent = "et le matériel auquel ils parlent."
+lead = "Des plateformes complètes en production, du firmware pour ESP32 et Arduino, et de l'apprentissage automatique qui tourne sur l'appareil. Je mène un projet du premier échange jusqu'au serveur qui l'héberge, et je le garde en marche."
+cta_work = "Voir les réalisations"
+cta_email = "M'écrire"
+portrait_alt = "Guelord Mwenderwa, assis, en gilet haute visibilité"
+caption_name = "Guelord Mwenderwa"
+caption_place = "Goma, RDC · UTC+2"
+status = "Ouvert aux collaborations"
+
+[[hero.facts]]
+value = "3"
+label = "plateformes en production, utilisées chaque jour"
+
+[[hero.facts]]
+value = "13"
+label = "bibliothèques open source avec tests et CI"
+
+[[hero.facts]]
+value = "2"
+label = "formations conçues et animées à Goma"
+
+[work]
+index = "01 — Réalisations"
+title = "Plateformes en production"
+intro = "Chacune est dessinée en maquettes pour le téléphone et l'ordinateur, construite avec des tests et une intégration continue, puis mise en ligne et surveillée par moi. Elles sont présentées ici par leur site en ligne."
+role_label = "Rôle"
+did_label = "Ce que j'ai fait"
+live = "En production"
+visit = "Visiter"
+gallery_label = "Autres écrans"
+
+[[work.cases]]
+id = "mwangaza"
+number = "Projet 01"
+name = "Mwangaza School"
+tagline = "La gestion scolaire pour la RDC, pensée pour marcher sans internet."
+summary = "Élèves et familles, frais en dollars et en francs congolais, une caisse qui imprime les reçus, le suivi des impayés, les notes, les délibérations et les bulletins, et un espace où les parents suivent les paiements sur leur téléphone. Conçue avec une école technique de Goma."
+role = "Produit, design, développement et exploitation"
+url = "https://mwangazaschool.com/"
+domain = "mwangazaschool.com"
+bullets = [
+  "Chaque écran dessiné d'abord en maquette, puis l'API Django et les applications React du personnel et des parents.",
+  "Caisse qui marche hors ligne : chaque appareil numérote ses reçus et chaque écriture est idempotente, donc rien n'est compté deux fois au retour du réseau.",
+  "Données de chaque école isolées deux fois, par l'application et par la Row Level Security de PostgreSQL, avec un journal des paiements, des notes et des rôles.",
+  "Hébergée sur un serveur AWS Lightsail de 2 Go derrière Caddy, avec sauvegardes hors serveur, suivi des erreurs et sonde de disponibilité.",
+]
+stack = ["Django", "PostgreSQL", "Celery", "React", "TypeScript", "PWA", "Docker", "Caddy", "AWS"]
+desktop = "mwangaza-cash-desk"
+desktop_alt = "Caisse Mwangaza : les frais en retard d'un élève et un paiement saisi en dollars"
+mobile = "mwangaza-portal"
+mobile_alt = "Espace parents Mwangaza sur un téléphone"
+gallery = [
+  { img = "mwangaza-dashboard", caption = "Tableau de bord du préfet" },
+  { img = "mwangaza-grades", caption = "Saisie des notes" },
+  { img = "mwangaza-unpaid", caption = "Impayés" },
+  { img = "mwangaza-site", caption = "Site public" },
+]
+
+[[work.cases]]
+id = "afronova"
+number = "Projet 02"
+name = "Afronova"
+tagline = "Site, application métier et espace client d'une entreprise technologique de Goma."
+summary = "Un site public bilingue pour une entreprise de réseaux, logiciels, électronique, énergie et cloud, adossé à une application interne et à un espace client."
+role = "Design et développement full-stack"
+url = "https://afronova-web.vercel.app/"
+domain = "afronova-web.vercel.app"
+bullets = [
+  "Toutes les pages publiques refaites à partir de maquettes, sur un système de design à jetons avec thèmes clair et sombre.",
+  "Monorepo TypeScript : front React et Vite, API Express et Prisma, PostgreSQL.",
+  "Si l'API ne répond pas, le site affiche un contenu prévu à l'avance : le visiteur ne voit jamais de section vide.",
+  "176 tests automatisés sur l'application web, typage strict et lint dans la CI.",
+]
+stack = ["React", "TypeScript", "Vite", "Tailwind CSS", "Express", "Prisma", "PostgreSQL", "Vercel", "Render"]
+desktop = "afronova-site"
+desktop_alt = "Accueil d'Afronova : réseaux, logiciels et énergie qui tiennent sur le terrain"
+mobile = "afronova-site-mobile"
+mobile_alt = "Accueil d'Afronova sur un téléphone"
+
+[[work.cases]]
+id = "dtms"
+number = "Projet 03"
+name = "DTMS"
+tagline = "Site public, espace membre et espace formation d'une entreprise de services techniques."
+summary = "Dynamic Technology Multi Services travaille en informatique, télécommunications, électronique et installations électriques. Sa plateforme fonctionne par modules : personnel, projets, clients, opérations et finances."
+role = "Design et développement"
+url = "https://dtms.site/"
+domain = "dtms.site"
+bullets = [
+  "Plateforme modulaire sur Firebase Hosting et Firestore, avec des accès par rôle pour chaque module.",
+  "Site public refait avec un système de design « plan technique », la typo IBM Plex et un thème sombre.",
+  "Espace formation pour les cours et les apprenants, à côté de l'espace membre.",
+]
+stack = ["JavaScript", "Firebase", "Firestore", "Supabase", "HTML", "CSS"]
+desktop = "dtms-site"
+desktop_alt = "Accueil de DTMS : des solutions technologiques qui font avancer vos projets"
+mobile = "dtms-site-mobile"
+mobile_alt = "Accueil de DTMS sur un téléphone"
+
+[highlights]
+index = "02 — Points forts"
+title = "Des problèmes que j'ai résolus"
+intro = "Les contraintes du terrain façonnent la technique : réseau instable, deux monnaies, téléphones partagés et serveurs modestes."
+
+[[highlights.items]]
+project = "Mwangaza"
+title = "Des reçus sans serveur"
+text = "La caisse d'une école continue d'encaisser pendant les coupures. Les reçus sont numérotés sur l'appareil, puis synchronisés par des écritures idempotentes au retour de la connexion."
+
+[[highlights.items]]
+project = "Mwangaza"
+title = "De l'argent sans erreur d'arrondi"
+text = "Les montants sont gardés en entiers, en centimes et en francs, avec un taux de change explicite. Un paiement ne se modifie jamais : une correction est un nouvel enregistrement."
+
+[[highlights.items]]
+project = "Mwangaza"
+title = "Plusieurs écoles, une base, aucune fuite"
+text = "Chaque requête est limitée à son école, et la Row Level Security de PostgreSQL le vérifie encore en dessous, avec des tests qui essaient de lire les données d'une autre école."
+
+[[highlights.items]]
+project = "Mwangaza"
+title = "Le bulletin officiel"
+text = "Les bulletins reproduisent le formulaire national de l'EPST avec un QR d'authenticité, ou impriment seulement les notes sur les feuilles pré-imprimées de l'école."
+
+[[highlights.items]]
+project = "Mwangaza"
+title = "Rapide sur un serveur de 2 Go"
+text = "La mémoire est mesurée avant et après chaque changement : les grosses bibliothèques se chargent à la demande, les longs travaux passent par des files, et aucun PDF n'est produit pendant une requête web."
+
+[[highlights.items]]
+project = "Edge AI"
+title = "Un réseau de neurones sur un microcontrôleur"
+text = "Un modèle de 172 paramètres diagnostique les pannes d'un moteur sur un ESP32, et un test de parité prouve que le firmware calcule ce que le modèle a appris en Python."
+
+[open_source]
+index = "03 — Open source"
+title = "Matériel, IA et simulation"
+intro = "Chaque projet part des principes de base, a ses tests et son intégration continue, et dit ce qui a été validé et ce qui ne l'a pas été."
+view = "Voir sur GitHub"
+more_title = "Autres bibliothèques et outils"
+all_repos = "Tous les dépôts"
+contrib_title = "Contributions à d'autres projets"
+contrib_intro = "Les pull requests que j'ai proposées à des projets tenus par d'autres."
+merged = "Fusionnée"
+open = "Ouverte"
+closed = "Fermée"
+
+[[open_source.featured]]
+kind = "IA embarquée"
+name = "Edge AI Motor Fault Detector"
+repo = "edge-ai-motor-fault-detector"
+text = "Diagnostique la surcharge, l'usure des roulements et le balourd d'un moteur à partir de son courant, avec un réseau de neurones qui tourne sur un ESP32."
+tags = ["ESP32", "TinyML", "C++", "NumPy"]
+img = "edge-ai"
+alt = "Matrice de confusion : 799 fenêtres inédites sur 800 bien classées"
+
+[[open_source.featured]]
+kind = "Instrumentation"
+name = "ESP32 Web Oscilloscope"
+repo = "esp32-web-oscilloscope"
+text = "Oscilloscope dans le navigateur jusqu'à 50 kéch/s, avec déclenchement à hystérésis, mémoire avant déclenchement et mesures automatiques."
+tags = ["ESP32", "ADC", "Web UI"]
+img = "oscilloscope"
+alt = "Interface web de l'oscilloscope : un signal carré et ses mesures"
+
+[[open_source.featured]]
+kind = "Simulation"
+name = "Circuit Solver"
+repo = "circuit-solver"
+text = "Simulateur à la SPICE par analyse nodale modifiée : point de repos, balayage en fréquence et transitoire, validés contre les résultats théoriques."
+tags = ["Python", "NumPy", "Théorie des circuits"]
+img = "circuit-solver"
+alt = "Diagramme de Bode d'un filtre RC passe-bas et d'un filtre RLC passe-bande"
+
+[[open_source.featured]]
+kind = "Asservissement"
+name = "DC Motor PID Controller"
+repo = "dc-motor-pid-controller"
+text = "Régulation de vitesse d'un moteur sur Arduino, avec un PID testé sur l'ordinateur contre un modèle du moteur, anti-emballement compris."
+tags = ["Arduino", "C++", "PlatformIO"]
+img = "pid"
+alt = "Réponse indicielle de régulateurs P, PI et PID sur un modèle de moteur"
+
+[[open_source.featured]]
+kind = "Apprentissage automatique"
+name = "Machine Learning from Scratch"
+repo = "ml-from-scratch"
+text = "Modèles linéaires, arbres de décision, k-NN, k-means, ACP et un perceptron multicouche avec rétropropagation écrite à la main, en NumPy seulement."
+tags = ["Python", "NumPy"]
+img = "ml"
+alt = "Frontières de décision de quatre classifieurs sur le jeu des deux lunes"
+
+[[open_source.featured]]
+kind = "Systèmes"
+name = "OS Scheduling Simulator"
+repo = "os-scheduling-simulator"
+text = "Ordonnancement du processeur avec diagrammes de Gantt, remplacement de pages, algorithme du banquier et ordonnancement du disque."
+tags = ["Python", "Systèmes d'exploitation"]
+img = "scheduler"
+alt = "Diagrammes de Gantt de cinq algorithmes d'ordonnancement"
+
+[[open_source.more]]
+repo = "SYSTEME_DOMOTIQUE-_SALLE-_NFORMATIQUE"
+name = "Domotique d'une salle informatique"
+text = "ESP32 : double lecteur RFID, comptage, mesure d'énergie, éclairage, intrusion."
+
+[[open_source.more]]
+repo = "sgis-v2"
+name = "sgis-v2"
+text = "API REST de gestion scolaire, présences par QR et RFID."
+
+[[open_source.more]]
+repo = "arduino-component-tester"
+name = "arduino-component-tester"
+text = "Résistance à gamme automatique, capacité et identification des diodes."
+
+[[open_source.more]]
+repo = "electronics-toolkit"
+name = "electronics-toolkit"
+text = "Calculateur : code couleur, séries E, NE555, ampli-op, régulateurs."
+
+[[open_source.more]]
+repo = "logic-circuit-toolkit"
+name = "logic-circuit-toolkit"
+text = "Expressions booléennes, simplification de Quine-McCluskey, simulation de portes."
+
+[[open_source.more]]
+repo = "numerical-analysis-toolkit"
+name = "numerical-analysis-toolkit"
+text = "Racines, interpolation, intégration, Runge-Kutta, systèmes linéaires."
+
+[[open_source.more]]
+repo = "statistics-from-scratch"
+name = "statistics-from-scratch"
+text = "Lois, tests d'hypothèse et régression, validés contre SciPy."
+
+[[open_source.more]]
+repo = "ipv4-network-toolkit"
+name = "ipv4-network-toolkit"
+text = "Sous-réseaux, VLSM, agrégation de routes, routage à état de liens."
+
+[[open_source.more]]
+repo = "academic-records-database"
+name = "academic-records-database"
+text = "Schéma normalisé de dossiers académiques, testé sur SQLite et PostgreSQL."
+
+[teaching]
+index = "04 — Formation"
+title = "Les formations que je conçois et anime"
+intro = "Des formations pratiques à Goma : une notion par exercice, et chaque exercice avec sa solution."
+
+[[teaching.courses]]
+repo = "FORMATION-PROGRAMMATION-EMBARQUER"
+name = "Programmation embarquée"
+text = "Les bases du C++ sur Arduino pour débutants : boucles, conditions, tableaux et temporisation sans blocage avec millis(), chaque notion rendue visible sur la carte."
+tags = ["Arduino", "C++", "PlatformIO"]
+
+[[teaching.courses]]
+repo = "FORMATION-PYTHON-DJANGO"
+name = "Développement web full-stack"
+text = "Un parcours du HTML et du CSS jusqu'à JavaScript, Python et une application Django mise en production."
+tags = ["HTML", "CSS", "JavaScript", "Python", "Django"]
+
+[about]
+index = "05 — Parcours"
+title = "Entre les circuits et le code"
+paragraphs = [
+  "J'ai étudié l'électronique générale dans un institut technique de Goma, et je termine une licence en informatique, option intelligence artificielle, à l'ISIG Goma.",
+  "Aujourd'hui je construis des plateformes que des organisations de l'Est de la RDC utilisent chaque jour, et je les conçois pour les conditions dans lesquelles elles tournent. Quand un problème touche le matériel, j'écris aussi le firmware, et quand des données doivent être interprétées, j'amène l'apprentissage automatique sur l'appareil.",
+]
+education_title = "Formation"
+principles_title = "Ma façon de travailler"
+skills_title = "Compétences"
+photo_alt = "Goma et le lac Kivu vus des hauteurs"
+photo_caption = "Goma et le lac Kivu, là où je vis et travaille."
+photo_credit = "Photo : Ericnkurunziza, CC BY-SA 4.0"
+photo_source = "https://commons.wikimedia.org/wiki/File:Kivu,Goma_and_Rubavu_On_Rwanda_Side.jpg"
+
+[[about.education]]
+school = "ISIG Goma"
+program = "Licence en informatique, option intelligence artificielle (LSI-IA)"
+when = "En cours · deuxième année"
+
+[[about.education]]
+school = "ITIG Don Bosco, Goma"
+program = "Diplôme technique en électronique générale"
+when = "Obtenu"
+
+[[about.principles]]
+title = "Vérifier contre une référence."
+text = "Le code numérique est comparé à des résultats analytiques ou à des bibliothèques établies, et la logique du firmware est testée sur l'ordinateur avant d'arriver sur la carte."
+
+[[about.principles]]
+title = "Faire concorder le modèle et l'appareil."
+text = "Quand un algorithme est entraîné sur un ordinateur puis déployé sur un microcontrôleur, un test prouve que les deux calculent la même chose."
+
+[[about.principles]]
+title = "La maquette avant le code."
+text = "Chaque écran est dessiné pour le téléphone et l'ordinateur avant d'être construit, avec le vrai contenu du métier."
+
+[[about.principles]]
+title = "Dire honnêtement les limites."
+text = "Chaque projet dit ce qui a été validé et ce qui ne l'a pas été."
+
+[[about.skills]]
+area = "Back-end"
+items = "Django, Django REST Framework, Celery, Node.js, Express, Prisma, REST, JWT"
+
+[[about.skills]]
+area = "Front-end"
+items = "React, TypeScript, Vite, Tailwind CSS, PWA hors ligne (Dexie), HTML, CSS"
+
+[[about.skills]]
+area = "Données et infrastructure"
+items = "PostgreSQL, Row Level Security, Redis, SQLite, Firebase, Supabase, Docker, Caddy, AWS Lightsail, Vercel, Render, GitHub Actions, Linux"
+
+[[about.skills]]
+area = "Embarqué"
+items = "C et C++, Arduino, ESP32, ESP8266, STM32, PlatformIO, ESPHome, UART, SPI, I2C, échantillonnage ADC, OTA"
+
+[[about.skills]]
+area = "Électronique"
+items = "Conception analogique et numérique, alimentations, capteurs, RFID, RF 433 MHz, KiCad, Proteus, simulation de circuits"
+
+[[about.skills]]
+area = "IA et données"
+items = "Python, NumPy, pandas, scikit-learn, OpenCV, TensorFlow, réseaux de neurones, inférence embarquée, statistiques"
+
+[contact]
+eyebrow = "Contact"
+title = "Une plateforme à construire ou un appareil à connecter ?"
+text = "Parlez-moi de l'organisation, des personnes qui vont l'utiliser et des conditions dans lesquelles elle doit marcher."
+email = "guelsmwenderwa@gmail.com"
+email_cta = "M'écrire"
+linkedin = "LinkedIn"
+github = "GitHub"
+
+[footer]
+built = "HTML et CSS statiques, sans framework, hébergés sur GitHub Pages."
+source = "Code source"
+credits = "Photo de Goma et du lac Kivu : Ericnkurunziza, CC BY-SA 4.0. Les écrans des produits montrent des données de démonstration."
+
+[not_found]
+title = "Cette page n'existe pas."
+text = "Le lien est peut-être ancien, ou l'adresse mal tapée."
+back = "Retour à l'accueil"

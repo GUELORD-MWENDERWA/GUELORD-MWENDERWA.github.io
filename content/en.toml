@@ -1,0 +1,377 @@
+# Portfolio content — English (default language, served at /).
+# Edit the text here, then run: python3 tools/build.py
+
+[meta]
+lang = "en"
+path = "/"
+og_locale = "en_US"
+title = "Guelord Mwenderwa — Software engineer in Goma, DR Congo"
+description = "I design, build and run software platforms for schools and businesses in the DR Congo, and the embedded systems they talk to: Django, React, TypeScript, ESP32 and machine learning."
+alt_path = "/fr/"
+alt_lang = "fr"
+alt_label = "Version française"
+alt_short = "FR"
+
+[nav]
+label = "Main navigation"
+skip = "Skip to content"
+home = "Guelord Mwenderwa, home"
+work = "Work"
+highlights = "Highlights"
+open_source = "Open source"
+teaching = "Teaching"
+about = "About"
+contact = "Contact"
+menu = "Open the menu"
+theme = "Switch between light and dark theme"
+email_cta = "Email me"
+
+[hero]
+eyebrow = "Software engineer · Goma, DR Congo"
+title_before = "I build the software that runs schools and businesses in the DR Congo, "
+title_accent = "and the hardware it talks to."
+lead = "Full-stack platforms in production, firmware for ESP32 and Arduino, and machine learning that runs on the device. I take a project from the first conversation to the server it runs on, and I keep it running."
+cta_work = "See selected work"
+cta_email = "Email me"
+portrait_alt = "Guelord Mwenderwa, seated, wearing a high-visibility vest"
+caption_name = "Guelord Mwenderwa"
+caption_place = "Goma, DR Congo · UTC+2"
+status = "Open to collaboration"
+
+[[hero.facts]]
+value = "3"
+label = "platforms in production, used every day"
+
+[[hero.facts]]
+value = "13"
+label = "open source libraries with tests and CI"
+
+[[hero.facts]]
+value = "2"
+label = "courses designed and taught in Goma"
+
+[work]
+index = "01 — Selected work"
+title = "Platforms in production"
+intro = "Each one is designed from mockups at phone and desktop widths, built with tests and continuous integration, then deployed and monitored by me. They are presented here through their live sites."
+role_label = "Role"
+did_label = "What I did"
+live = "In production"
+visit = "Visit"
+gallery_label = "More screens"
+
+[[work.cases]]
+id = "mwangaza"
+number = "Case 01"
+name = "Mwangaza School"
+tagline = "School management for the DR Congo, built to keep working without internet."
+summary = "Students and families, fees in US dollars and Congolese francs, a cash desk that prints receipts, unpaid-fee follow-up, grades, deliberations and report cards, and a portal where parents follow payments on their phone. Designed with a technical school in Goma."
+role = "Product, design, engineering and operations"
+url = "https://mwangazaschool.com/"
+domain = "mwangazaschool.com"
+bullets = [
+  "Designed every screen as a mockup first, then built the Django API and the React applications for staff and parents.",
+  "Offline-first cash desk: each device numbers its own receipts and every write is idempotent, so nothing is counted twice when the network returns.",
+  "School data isolated twice, by the application and by PostgreSQL Row Level Security, with an audit trail on payments, grades and roles.",
+  "Runs on a 2 GB AWS Lightsail server behind Caddy, with off-site backups, error tracking and uptime checks.",
+]
+stack = ["Django", "PostgreSQL", "Celery", "React", "TypeScript", "PWA", "Docker", "Caddy", "AWS"]
+desktop = "mwangaza-cash-desk"
+desktop_alt = "Mwangaza cash desk: a student's overdue fees and a payment being entered in US dollars"
+mobile = "mwangaza-portal"
+mobile_alt = "Mwangaza parent portal on a phone"
+gallery = [
+  { img = "mwangaza-dashboard", caption = "Principal's dashboard" },
+  { img = "mwangaza-grades", caption = "Grade entry" },
+  { img = "mwangaza-unpaid", caption = "Unpaid fees" },
+  { img = "mwangaza-site", caption = "Public website" },
+]
+
+[[work.cases]]
+id = "afronova"
+number = "Case 02"
+name = "Afronova"
+tagline = "Website, business application and client portal for a Goma technology company."
+summary = "A bilingual public website for a company working in networks, software, electronics, energy and cloud, backed by an internal business application and a client portal."
+role = "Design and full-stack engineering"
+url = "https://afronova-web.vercel.app/"
+domain = "afronova-web.vercel.app"
+bullets = [
+  "Redesigned every public page from mockups, on a design system of tokens with light and dark themes.",
+  "TypeScript monorepo: React and Vite front end, Express and Prisma API, PostgreSQL.",
+  "The site falls back to curated content when the API is unreachable, so visitors never see an empty section.",
+  "176 automated tests on the web application, strict typing and linting in CI.",
+]
+stack = ["React", "TypeScript", "Vite", "Tailwind CSS", "Express", "Prisma", "PostgreSQL", "Vercel", "Render"]
+desktop = "afronova-site"
+desktop_alt = "Afronova home page: networks, software and energy that hold up in the field"
+mobile = "afronova-site-mobile"
+mobile_alt = "Afronova home page on a phone"
+
+[[work.cases]]
+id = "dtms"
+number = "Case 03"
+name = "DTMS"
+tagline = "Public website, member area and training portal for an engineering services company."
+summary = "Dynamic Technology Multi Services works in IT, telecommunications, electronics and electrical installations. Its platform runs on modules for staff, projects, clients, operations and finance."
+role = "Design and engineering"
+url = "https://dtms.site/"
+domain = "dtms.site"
+bullets = [
+  "Modular platform on Firebase Hosting and Firestore, with role-based access for each module.",
+  "Public site rebuilt with a technical-drawing design system, IBM Plex type and a dark theme.",
+  "Training portal for courses and learners, alongside the member area.",
+]
+stack = ["JavaScript", "Firebase", "Firestore", "Supabase", "HTML", "CSS"]
+desktop = "dtms-site"
+desktop_alt = "DTMS home page: technology solutions that move your projects forward"
+mobile = "dtms-site-mobile"
+mobile_alt = "DTMS home page on a phone"
+
+[highlights]
+index = "02 — Highlights"
+title = "Problems I have solved"
+intro = "The constraints of the field shape the engineering: unstable networks, two currencies, shared phones and modest servers."
+
+[[highlights.items]]
+project = "Mwangaza"
+title = "Receipts without a server"
+text = "A school cash desk keeps taking payments during network cuts. Receipts are numbered on the device and synchronised with idempotent writes when the connection comes back."
+
+[[highlights.items]]
+project = "Mwangaza"
+title = "Money without rounding errors"
+text = "Amounts are stored as integers, in cents and francs, with an explicit exchange rate. Payments are immutable: a correction is a new record, never an edit."
+
+[[highlights.items]]
+project = "Mwangaza"
+title = "Many schools, one database, no leaks"
+text = "Every query is scoped to its school, and PostgreSQL Row Level Security enforces it again underneath, with tests that try to read another school's data."
+
+[[highlights.items]]
+project = "Mwangaza"
+title = "The official report card"
+text = "Report cards reproduce the national EPST form with an authenticity QR code, or print only the grades onto a school's pre-printed sheets."
+
+[[highlights.items]]
+project = "Mwangaza"
+title = "Fast on a 2 GB server"
+text = "Memory is measured before and after each change: heavy libraries load on demand, long jobs run in background queues, and no PDF is built inside a web request."
+
+[[highlights.items]]
+project = "Edge AI"
+title = "A neural network on a microcontroller"
+text = "A 172-parameter model diagnoses motor faults on an ESP32, and a parity test proves that the firmware computes what the model learned in Python."
+
+[open_source]
+index = "03 — Open source"
+title = "Hardware, AI and simulation"
+intro = "Each project implements its subject from first principles, ships with tests and continuous integration, and documents what has and has not been validated."
+view = "View on GitHub"
+more_title = "More libraries and tools"
+all_repos = "All repositories"
+contrib_title = "Contributions to other projects"
+contrib_intro = "Pull requests I have opened on projects maintained by others."
+merged = "Merged"
+open = "Open"
+closed = "Closed"
+
+[[open_source.featured]]
+kind = "Embedded AI"
+name = "Edge AI Motor Fault Detector"
+repo = "edge-ai-motor-fault-detector"
+text = "Diagnoses overload, bearing faults and imbalance from a motor's current signature, with a neural network running on an ESP32."
+tags = ["ESP32", "TinyML", "C++", "NumPy"]
+img = "edge-ai"
+alt = "Confusion matrix: 799 of 800 unseen windows classified correctly"
+
+[[open_source.featured]]
+kind = "Instrumentation"
+name = "ESP32 Web Oscilloscope"
+repo = "esp32-web-oscilloscope"
+text = "Browser-based oscilloscope sampling up to 50 kS/s, with a hysteresis trigger, pre-trigger history and automatic measurements."
+tags = ["ESP32", "ADC", "Web UI"]
+img = "oscilloscope"
+alt = "Oscilloscope web interface showing a square wave and its measurements"
+
+[[open_source.featured]]
+kind = "Simulation"
+name = "Circuit Solver"
+repo = "circuit-solver"
+text = "SPICE-like simulator based on modified nodal analysis: DC, AC sweep and transient, validated against closed-form results."
+tags = ["Python", "NumPy", "Circuit theory"]
+img = "circuit-solver"
+alt = "Bode plot of an RC low-pass and an RLC band-pass filter"
+
+[[open_source.featured]]
+kind = "Control"
+name = "DC Motor PID Controller"
+repo = "dc-motor-pid-controller"
+text = "Closed-loop motor speed control on Arduino, with a PID unit-tested on the host against a motor model, anti-windup included."
+tags = ["Arduino", "C++", "PlatformIO"]
+img = "pid"
+alt = "Step response of P, PI and PID controllers on a motor model"
+
+[[open_source.featured]]
+kind = "Machine learning"
+name = "Machine Learning from Scratch"
+repo = "ml-from-scratch"
+text = "Linear models, decision trees, k-NN, k-means, PCA and a multilayer perceptron with hand-written backpropagation, in NumPy only."
+tags = ["Python", "NumPy"]
+img = "ml"
+alt = "Decision boundaries of four classifiers on the two-moons dataset"
+
+[[open_source.featured]]
+kind = "Systems"
+name = "OS Scheduling Simulator"
+repo = "os-scheduling-simulator"
+text = "CPU scheduling with Gantt charts, page replacement, the Banker's algorithm and disk scheduling."
+tags = ["Python", "Operating systems"]
+img = "scheduler"
+alt = "Gantt charts of five CPU scheduling algorithms"
+
+[[open_source.more]]
+repo = "SYSTEME_DOMOTIQUE-_SALLE-_NFORMATIQUE"
+name = "Computer lab automation"
+text = "ESP32: dual RFID access, occupancy, energy metering, lighting, intrusion."
+
+[[open_source.more]]
+repo = "sgis-v2"
+name = "sgis-v2"
+text = "School management REST API with QR and RFID attendance."
+
+[[open_source.more]]
+repo = "arduino-component-tester"
+name = "arduino-component-tester"
+text = "Auto-ranging resistance, capacitance and diode identification."
+
+[[open_source.more]]
+repo = "electronics-toolkit"
+name = "electronics-toolkit"
+text = "Design calculator: colour codes, E-series, NE555, op-amps, regulators."
+
+[[open_source.more]]
+repo = "logic-circuit-toolkit"
+name = "logic-circuit-toolkit"
+text = "Boolean parsing, Quine-McCluskey minimisation, gate simulation."
+
+[[open_source.more]]
+repo = "numerical-analysis-toolkit"
+name = "numerical-analysis-toolkit"
+text = "Root finding, interpolation, quadrature, Runge-Kutta, linear solvers."
+
+[[open_source.more]]
+repo = "statistics-from-scratch"
+name = "statistics-from-scratch"
+text = "Distributions, hypothesis tests and regression, validated against SciPy."
+
+[[open_source.more]]
+repo = "ipv4-network-toolkit"
+name = "ipv4-network-toolkit"
+text = "Subnetting, VLSM, route summarisation and link-state routing."
+
+[[open_source.more]]
+repo = "academic-records-database"
+name = "academic-records-database"
+text = "Normalised academic records schema, tested on SQLite and PostgreSQL."
+
+[teaching]
+index = "04 — Teaching"
+title = "Courses I design and teach"
+intro = "Hands-on courses in Goma: one concept per exercise, and every exercise with its solution."
+
+[[teaching.courses]]
+repo = "FORMATION-PROGRAMMATION-EMBARQUER"
+name = "Embedded programming"
+text = "C++ fundamentals on Arduino for beginners: loops, conditions, arrays and non-blocking timing with millis(), each one made visible on the board."
+tags = ["Arduino", "C++", "PlatformIO"]
+
+[[teaching.courses]]
+repo = "FORMATION-PYTHON-DJANGO"
+name = "Full-stack web development"
+text = "A path from HTML and CSS to JavaScript, Python and a Django application deployed to production."
+tags = ["HTML", "CSS", "JavaScript", "Python", "Django"]
+
+[about]
+index = "05 — About"
+title = "Between circuits and code"
+paragraphs = [
+  "I trained in general electronics at a technical institute in Goma, and I am completing a Licence in Computer Science, Artificial Intelligence track, at ISIG Goma.",
+  "Today I build platforms that organisations in the eastern DR Congo use every day, and I design them for the conditions they run in. When a problem touches hardware, I write the firmware too, and when data needs interpreting, I bring the machine learning onto the device.",
+]
+education_title = "Education"
+principles_title = "How I work"
+skills_title = "Skills"
+photo_alt = "Goma and Lake Kivu seen from the hills"
+photo_caption = "Goma and Lake Kivu, where I live and work."
+photo_credit = "Photo: Ericnkurunziza, CC BY-SA 4.0"
+photo_source = "https://commons.wikimedia.org/wiki/File:Kivu,Goma_and_Rubavu_On_Rwanda_Side.jpg"
+
+[[about.education]]
+school = "ISIG Goma"
+program = "Licence in Computer Science, Artificial Intelligence track (LSI-IA)"
+when = "In progress · second year"
+
+[[about.education]]
+school = "ITIG Don Bosco, Goma"
+program = "Technical diploma in General Electronics"
+when = "Completed"
+
+[[about.principles]]
+title = "Verify against a reference."
+text = "Numerical code is checked against analytical results or established libraries, and firmware logic is unit-tested on the host before it reaches hardware."
+
+[[about.principles]]
+title = "Make the model and the device agree."
+text = "When an algorithm is trained on a computer and deployed on a microcontroller, a test proves that both compute the same thing."
+
+[[about.principles]]
+title = "Mockups before code."
+text = "Every screen is drawn at phone and desktop widths before it is built, with real content from the domain."
+
+[[about.principles]]
+title = "State limits honestly."
+text = "Every project says what has been validated and what has not."
+
+[[about.skills]]
+area = "Back end"
+items = "Django, Django REST Framework, Celery, Node.js, Express, Prisma, REST, JWT"
+
+[[about.skills]]
+area = "Front end"
+items = "React, TypeScript, Vite, Tailwind CSS, offline-first PWAs (Dexie), HTML, CSS"
+
+[[about.skills]]
+area = "Data and infrastructure"
+items = "PostgreSQL, Row Level Security, Redis, SQLite, Firebase, Supabase, Docker, Caddy, AWS Lightsail, Vercel, Render, GitHub Actions, Linux"
+
+[[about.skills]]
+area = "Embedded"
+items = "C and C++, Arduino, ESP32, ESP8266, STM32, PlatformIO, ESPHome, UART, SPI, I2C, ADC sampling, OTA"
+
+[[about.skills]]
+area = "Electronics"
+items = "Analog and digital design, power supplies, sensors, RFID, 433 MHz RF, KiCad, Proteus, circuit simulation"
+
+[[about.skills]]
+area = "AI and data"
+items = "Python, NumPy, pandas, scikit-learn, OpenCV, TensorFlow, neural networks, embedded inference, statistics"
+
+[contact]
+eyebrow = "Contact"
+title = "Have a platform to build or a device to bring online?"
+text = "Tell me about the organisation, the people who will use it and the conditions it must work in."
+email = "guelsmwenderwa@gmail.com"
+email_cta = "Write to me"
+linkedin = "LinkedIn"
+github = "GitHub"
+
+[footer]
+built = "Static HTML and CSS, no framework, hosted on GitHub Pages."
+source = "Source"
+credits = "Photo of Goma and Lake Kivu: Ericnkurunziza, CC BY-SA 4.0. Product screens use demonstration data."
+
+[not_found]
+title = "This page does not exist."
+text = "The link may be old, or the address mistyped."
+back = "Back to the home page"
