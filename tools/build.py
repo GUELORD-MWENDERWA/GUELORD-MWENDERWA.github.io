@@ -247,6 +247,7 @@ def open_source(c: dict, base: str, contributions: list[dict]) -> str:
         rows = "".join(f"""
 <a class="contrib" href="{x["url"]}">
   <span class="contrib-top"><span class="contrib-repo">{e(x["repo"])}</span><span class="contrib-state{' is-merged' if x["state"] == "merged" else ''}">{e(states[x["state"]])}</span></span>
+  <span class="contrib-context">{e(x.get("context_" + c["meta"]["lang"], ""))}</span>
   <span class="contrib-title">{e(x["title"])}</span>
 </a>""" for x in contributions)
         contrib = f"""

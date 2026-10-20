@@ -744,7 +744,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 .contrib-repo { font-family: var(--mono); font-size: var(--t-sm); font-weight: 500; color: var(--ink); overflow-wrap: anywhere; }
 .contrib-state { font-family: var(--mono); font-size: var(--t-xs); padding: 2px 8px; border-radius: var(--r-pill); border: 1px solid var(--line); color: var(--ink-2); }
 .contrib-state.is-merged { color: var(--live); border-color: currentColor; }
-.contrib-title { color: var(--ink-2); font-size: var(--t-sm); }
+.contrib-context { color: var(--ink-3); font-size: var(--t-sm); }
+.contrib-title { color: var(--ink); font-size: var(--t-sm); font-weight: 500; }
 
 @media (min-width: 768px) {
   .projects { grid-template-columns: repeat(2, 1fr); gap: 20px; }

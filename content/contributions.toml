@@ -1,0 +1,10 @@
+# Pull requests opened on projects maintained by others.
+# state = "open", "merged" or "closed" ; update it when the maintainer decides, then run tools/build.py.
+
+[[pr]]
+repo = "paulober/MicroPico"
+context_en = "VS Code extension for MicroPython on the Raspberry Pi Pico"
+context_fr = "Extension VS Code pour MicroPython sur Raspberry Pi Pico"
+title = "Add a Hard Reset button to the status bar options (#368)"
+url = "https://github.com/paulober/MicroPico/pull/368"
+state = "open"
