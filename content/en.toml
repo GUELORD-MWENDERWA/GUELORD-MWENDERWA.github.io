@@ -5,8 +5,9 @@
 lang = "en"
 path = "/"
 og_locale = "en_US"
-title = "Guelord Mwenderwa — Software engineer in Goma, DR Congo"
-description = "I design, build and run software platforms for schools and businesses in the DR Congo, and the embedded systems they talk to: Django, React, TypeScript, ESP32 and machine learning."
+title = "Guelord Mwenderwa — Embedded systems and AI engineer in Goma, DR Congo"
+description = "Embedded systems and AI engineer in Goma, DR Congo: electronics, ESP32 firmware, machine learning on microcontrollers, and full-stack platforms in production for schools and businesses. Trainer in embedded programming and web development."
+job_title = "Embedded systems and AI engineer"
 alt_path = "/fr/"
 alt_lang = "fr"
 alt_label = "Version française"
@@ -18,7 +19,7 @@ skip = "Skip to content"
 home = "Guelord Mwenderwa, home"
 work = "Work"
 highlights = "Highlights"
-open_source = "Open source"
+open_source = "Embedded & AI"
 teaching = "Teaching"
 about = "About"
 contact = "Contact"
@@ -27,10 +28,12 @@ theme = "Switch between light and dark theme"
 email_cta = "Email me"
 
 [hero]
-eyebrow = "Software engineer · Goma, DR Congo"
-title_before = "I build the software that runs schools and businesses in the DR Congo, "
-title_accent = "and the hardware it talks to."
-lead = "Full-stack platforms in production, firmware for ESP32 and Arduino, and machine learning that runs on the device. I take a project from the first conversation to the server it runs on, and I keep it running."
+eyebrow = "Embedded systems & AI engineer · Goma, DR Congo"
+title_before = "Electronics, firmware, AI and web platforms: "
+title_accent = "I build the whole system, from the circuit to the cloud."
+lead = "I design circuits and ESP32 firmware, bring machine learning onto microcontrollers, and build the web platforms that schools and businesses in the DR Congo use every day, through to the server they run on. I also design and teach courses in embedded programming and web development."
+fields_label = "What I do"
+fields = ["Electronics", "Embedded firmware", "AI and machine learning", "Full-stack web", "DevOps", "Training"]
 cta_work = "See selected work"
 cta_email = "Email me"
 portrait_alt = "Guelord Mwenderwa, seated, wearing a high-visibility vest"
@@ -42,7 +45,7 @@ label = "platforms in production, used every day"
 
 [[hero.facts]]
 value = "13"
-label = "open source libraries with tests and CI"
+label = "open source projects in electronics, AI and systems"
 
 [[hero.facts]]
 value = "2"
@@ -89,8 +92,8 @@ gallery = [
 id = "afronova"
 number = "Case 02"
 name = "Afronova"
-tagline = "Website, business application and client portal for a Goma technology company."
-summary = "A bilingual public website for a company working in networks, software, electronics, energy and cloud, backed by an internal business application and a client portal."
+tagline = "The new platform of DTMS, rebuilt under the Afronova name."
+summary = "DTMS, a Goma company working in networks, software, electronics and energy, became Afronova. I rebuilt its platform in TypeScript: a bilingual public website, an internal business application and a client portal."
 role = "Design and full-stack engineering"
 url = "https://afronova-web.vercel.app/"
 domain = "afronova-web.vercel.app"
@@ -110,8 +113,8 @@ mobile_alt = "Afronova home page on a phone"
 id = "dtms"
 number = "Case 03"
 name = "DTMS"
-tagline = "Public website, member area and training portal for an engineering services company."
-summary = "Dynamic Technology Multi Services works in IT, telecommunications, electronics and electrical installations. Its platform runs on modules for staff, projects, clients, operations and finance."
+tagline = "The first generation of the platform, still online."
+summary = "Dynamic Technology Multi Services, now Afronova, works in IT, telecommunications, electronics and electrical installations. This first platform runs on Firebase modules for staff, projects, clients, operations and finance."
 role = "Design and engineering"
 url = "https://dtms.site/"
 domain = "dtms.site"
@@ -127,7 +130,7 @@ mobile = "dtms-site-mobile"
 mobile_alt = "DTMS home page on a phone"
 
 [highlights]
-index = "02 — Highlights"
+index = "03 — Highlights"
 title = "Problems I have solved"
 intro = "The constraints of the field shape the engineering: unstable networks, two currencies, shared phones and modest servers."
 
@@ -147,14 +150,14 @@ title = "Many schools, one database, no leaks"
 text = "Every query is scoped to its school, and PostgreSQL Row Level Security enforces it again underneath, with tests that try to read another school's data."
 
 [[highlights.items]]
-project = "Mwangaza"
-title = "The official report card"
-text = "Report cards reproduce the national EPST form with an authenticity QR code, or print only the grades onto a school's pre-printed sheets."
+project = "Lab automation"
+title = "A computer lab that runs itself"
+text = "An ESP32 handles dual RFID access, occupancy counting, energy metering, daylight-aware lighting and night-time intrusion detection, in eleven firmware modules."
 
 [[highlights.items]]
-project = "Mwangaza"
-title = "Fast on a modest server"
-text = "Performance is measured before and after each change: heavy work runs in background queues, so screens stay fast with a thousand students."
+project = "PID control"
+title = "A controller proven before the board"
+text = "The PID that drives a DC motor is unit-tested on the computer against a motor model, anti-windup included, before it is flashed to the Arduino."
 
 [[highlights.items]]
 project = "Edge AI"
@@ -162,9 +165,9 @@ title = "A neural network on a microcontroller"
 text = "A 172-parameter model diagnoses motor faults on an ESP32, and a parity test proves that the firmware computes what the model learned in Python."
 
 [open_source]
-index = "03 — Open source"
-title = "Hardware, AI and simulation"
-intro = "Each project implements its subject from first principles, ships with tests and continuous integration, and documents what has and has not been validated."
+index = "02 — Embedded systems and AI"
+title = "Electronics, firmware and machine learning"
+intro = "Open source projects built from first principles, each with its tests, continuous integration and a clear statement of what has been validated."
 view = "View on GitHub"
 all_repos = "All repositories"
 contrib_title = "Contributions to other projects"
@@ -248,8 +251,8 @@ tags = ["HTML", "CSS", "JavaScript", "Python", "Django"]
 index = "05 — About"
 title = "Between circuits and code"
 paragraphs = [
-  "I trained in general electronics at a technical institute in Goma, and I am completing a Licence in Computer Science, Artificial Intelligence track, at ISIG Goma.",
-  "Today I build platforms that organisations in the eastern DR Congo use every day, and I design them for the conditions they run in. When a problem touches hardware, I write the firmware too, and when data needs interpreting, I bring the machine learning onto the device.",
+  "I hold a technical diploma in general electronics from ITIG Don Bosco in Goma, and I am completing a Licence in Computer Science, Artificial Intelligence track, at ISIG Goma.",
+  "My work covers the whole chain: the circuit and its firmware, the signal processing and machine learning that interpret the data, and the web platform people use to operate it, designed for the conditions of the eastern DR Congo. I also train others, in embedded programming and full-stack web development.",
 ]
 education_title = "Education"
 principles_title = "How I work"

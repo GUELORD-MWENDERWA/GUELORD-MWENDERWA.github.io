@@ -385,6 +385,21 @@ ul { margin: 0; padding: 0; list-style: none; }
   color: var(--ink-2);
   max-width: 58ch;
 }
+.hero-fields { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; max-width: 640px; }
+.hero-fields li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 32px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-pill);
+  background: var(--card);
+  font-size: var(--t-sm);
+  font-weight: 500;
+  color: var(--ink-2);
+}
+.hero-fields li::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--copper); }
 .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 .hero-links { display: flex; flex-wrap: wrap; gap: 4px 20px; margin-top: 20px; }
 .hero-links a {

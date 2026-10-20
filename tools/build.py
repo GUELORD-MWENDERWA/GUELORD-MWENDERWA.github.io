@@ -103,7 +103,7 @@ def picture(base: str, name: str, alt: str, sizes: str, cls: str = "", eager: bo
 def header(c: dict, base: str) -> str:
     n = c["nav"]
     m = c["meta"]
-    links = [("work", n["work"]), ("highlights", n["highlights"]), ("open-source", n["open_source"]),
+    links = [("work", n["work"]), ("open-source", n["open_source"]), ("highlights", n["highlights"]),
              ("teaching", n["teaching"]), ("about", n["about"])]
     desktop = "".join(f'<a href="#{i}">{e(t)}</a>' for i, t in links)
     mobile = "".join(f'<a href="#{i}">{e(t)}</a>' for i, t in links)
@@ -142,6 +142,7 @@ def hero(c: dict, base: str) -> str:
         <p class="eyebrow">{e(h["eyebrow"])}</p>
         <h1 id="hero-title">{e(h["title_before"])}<em>{e(h["title_accent"])}</em></h1>
         <p class="hero-lead">{e(h["lead"])}</p>
+        <ul class="hero-fields" aria-label="{e(h["fields_label"])}">{"".join(f"<li>{e(x)}</li>" for x in h["fields"])}</ul>
         <div class="hero-ctas">
           <a class="btn btn-primary" href="#work">{e(h["cta_work"])}{icon("arrow-down")}</a>
           <a class="btn btn-outline" href="mailto:{c["contact"]["email"]}">{icon("mail")}{e(h["cta_email"])}</a>
@@ -359,14 +360,15 @@ def head(c: dict, base: str, *, title: str, description: str, canonical: str, in
         "name": "Guelord Mwenderwa",
         "url": f"{SITE}/",
         "image": f"{SITE}/assets/img/portrait-460.webp",
-        "jobTitle": "Software engineer" if m["lang"] == "en" else "Ingénieur logiciel",
+        "jobTitle": m["job_title"],
         "email": f"mailto:{c['contact']['email']}",
         "address": {"@type": "PostalAddress", "addressLocality": "Goma", "addressCountry": "CD"},
         "alumniOf": [
             {"@type": "CollegeOrUniversity", "name": "Institut Supérieur d'Informatique et de Gestion (ISIG Goma)"},
             {"@type": "HighSchool", "name": "Institut Technique Industriel de Goma (ITIG Don Bosco)"},
         ],
-        "knowsAbout": ["Django", "React", "TypeScript", "PostgreSQL", "ESP32", "Embedded systems", "Machine learning"],
+        "knowsAbout": ["Embedded systems", "Electronics", "ESP32", "Firmware", "Machine learning", "TinyML",
+                       "Django", "React", "TypeScript", "PostgreSQL", "DevOps", "Technical training"],
         "sameAs": [GITHUB, LINKEDIN],
     }
     robots = "" if index else '<meta name="robots" content="noindex">'
@@ -416,8 +418,8 @@ def page(c: dict, base: str, contributions: list[dict]) -> str:
         + '\n<main id="main">'
         + hero(c, base)
         + work(c, base)
-        + highlights(c)
         + open_source(c, base, contributions)
+        + highlights(c)
         + teaching(c)
         + about(c, base)
         + contact(c)

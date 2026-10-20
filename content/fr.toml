@@ -5,8 +5,9 @@
 lang = "fr"
 path = "/fr/"
 og_locale = "fr_FR"
-title = "Guelord Mwenderwa — Ingénieur logiciel à Goma, RDC"
-description = "Je conçois, développe et fais tourner des plateformes pour les écoles et les entreprises de la RDC, et les systèmes embarqués qui leur parlent : Django, React, TypeScript, ESP32 et apprentissage automatique."
+title = "Guelord Mwenderwa — Ingénieur systèmes embarqués et IA à Goma, RDC"
+description = "Ingénieur systèmes embarqués et IA à Goma, RDC : électronique, firmware ESP32, apprentissage automatique sur microcontrôleur et plateformes web en production pour des écoles et des entreprises. Formateur en programmation embarquée et en développement web."
+job_title = "Ingénieur systèmes embarqués et IA"
 alt_path = "/"
 alt_lang = "en"
 alt_label = "English version"
@@ -18,7 +19,7 @@ skip = "Aller au contenu"
 home = "Guelord Mwenderwa, accueil"
 work = "Réalisations"
 highlights = "Points forts"
-open_source = "Open source"
+open_source = "Embarqué et IA"
 teaching = "Formation"
 about = "Parcours"
 contact = "Contact"
@@ -27,10 +28,12 @@ theme = "Passer du thème clair au thème sombre"
 email_cta = "M'écrire"
 
 [hero]
-eyebrow = "Ingénieur logiciel · Goma, RDC"
-title_before = "Je construis les logiciels qui font tourner des écoles et des entreprises en RDC, "
-title_accent = "et le matériel auquel ils parlent."
-lead = "Des plateformes complètes en production, du firmware pour ESP32 et Arduino, et de l'apprentissage automatique qui tourne sur l'appareil. Je mène un projet du premier échange jusqu'au serveur qui l'héberge, et je le garde en marche."
+eyebrow = "Ingénieur systèmes embarqués et IA · Goma, RDC"
+title_before = "Électronique, firmware, IA et plateformes web : "
+title_accent = "je construis le système entier, du circuit jusqu'au cloud."
+lead = "Je conçois des circuits et du firmware ESP32, j'amène l'apprentissage automatique sur les microcontrôleurs, et je construis les plateformes web que des écoles et des entreprises de la RDC utilisent chaque jour, jusqu'au serveur qui les héberge. Je conçois et j'anime aussi des formations en programmation embarquée et en développement web."
+fields_label = "Mes domaines"
+fields = ["Électronique", "Firmware embarqué", "IA et apprentissage automatique", "Web full-stack", "DevOps", "Formation"]
 cta_work = "Voir les réalisations"
 cta_email = "M'écrire"
 portrait_alt = "Guelord Mwenderwa, assis, en gilet haute visibilité"
@@ -42,7 +45,7 @@ label = "plateformes en production, utilisées chaque jour"
 
 [[hero.facts]]
 value = "13"
-label = "bibliothèques open source avec tests et CI"
+label = "projets open source en électronique, IA et systèmes"
 
 [[hero.facts]]
 value = "2"
@@ -89,8 +92,8 @@ gallery = [
 id = "afronova"
 number = "Projet 02"
 name = "Afronova"
-tagline = "Site, application métier et espace client d'une entreprise technologique de Goma."
-summary = "Un site public bilingue pour une entreprise de réseaux, logiciels, électronique, énergie et cloud, adossé à une application interne et à un espace client."
+tagline = "La nouvelle plateforme de DTMS, refaite sous le nom Afronova."
+summary = "DTMS, une entreprise de Goma en réseaux, logiciels, électronique et énergie, est devenue Afronova. J'ai refait sa plateforme en TypeScript : un site public bilingue, une application métier interne et un espace client."
 role = "Design et développement full-stack"
 url = "https://afronova-web.vercel.app/"
 domain = "afronova-web.vercel.app"
@@ -110,8 +113,8 @@ mobile_alt = "Accueil d'Afronova sur un téléphone"
 id = "dtms"
 number = "Projet 03"
 name = "DTMS"
-tagline = "Site public, espace membre et espace formation d'une entreprise de services techniques."
-summary = "Dynamic Technology Multi Services travaille en informatique, télécommunications, électronique et installations électriques. Sa plateforme fonctionne par modules : personnel, projets, clients, opérations et finances."
+tagline = "La première génération de la plateforme, toujours en ligne."
+summary = "Dynamic Technology Multi Services, aujourd'hui Afronova, travaille en informatique, télécommunications, électronique et installations électriques. Cette première plateforme fonctionne par modules sur Firebase : personnel, projets, clients, opérations et finances."
 role = "Design et développement"
 url = "https://dtms.site/"
 domain = "dtms.site"
@@ -127,7 +130,7 @@ mobile = "dtms-site-mobile"
 mobile_alt = "Accueil de DTMS sur un téléphone"
 
 [highlights]
-index = "02 — Points forts"
+index = "03 — Points forts"
 title = "Des problèmes que j'ai résolus"
 intro = "Les contraintes du terrain façonnent la technique : réseau instable, deux monnaies, téléphones partagés et serveurs modestes."
 
@@ -147,14 +150,14 @@ title = "Plusieurs écoles, une base, aucune fuite"
 text = "Chaque requête est limitée à son école, et la Row Level Security de PostgreSQL le vérifie encore en dessous, avec des tests qui essaient de lire les données d'une autre école."
 
 [[highlights.items]]
-project = "Mwangaza"
-title = "Le bulletin officiel"
-text = "Les bulletins reproduisent le formulaire national de l'EPST avec un QR d'authenticité, ou impriment seulement les notes sur les feuilles pré-imprimées de l'école."
+project = "Domotique"
+title = "Une salle informatique qui se gère seule"
+text = "Un ESP32 gère l'accès par double lecteur RFID, le comptage des présents, la mesure d'énergie, l'éclairage selon la lumière du jour et la détection d'intrusion la nuit, en onze modules de firmware."
 
 [[highlights.items]]
-project = "Mwangaza"
-title = "Rapide sur un serveur modeste"
-text = "Les performances sont mesurées avant et après chaque changement : les travaux lourds passent par des files, et les écrans restent rapides avec mille élèves."
+project = "Asservissement PID"
+title = "Un régulateur prouvé avant la carte"
+text = "Le PID qui pilote un moteur à courant continu est testé sur l'ordinateur contre un modèle du moteur, anti-emballement compris, avant d'être téléversé sur l'Arduino."
 
 [[highlights.items]]
 project = "Edge AI"
@@ -162,9 +165,9 @@ title = "Un réseau de neurones sur un microcontrôleur"
 text = "Un modèle de 172 paramètres diagnostique les pannes d'un moteur sur un ESP32, et un test de parité prouve que le firmware calcule ce que le modèle a appris en Python."
 
 [open_source]
-index = "03 — Open source"
-title = "Matériel, IA et simulation"
-intro = "Chaque projet part des principes de base, a ses tests et son intégration continue, et dit ce qui a été validé et ce qui ne l'a pas été."
+index = "02 — Systèmes embarqués et IA"
+title = "Électronique, firmware et apprentissage automatique"
+intro = "Des projets open source construits à partir des principes de base, chacun avec ses tests, son intégration continue et ce qui a été validé."
 view = "Voir sur GitHub"
 all_repos = "Tous les dépôts"
 contrib_title = "Contributions à d'autres projets"
@@ -248,8 +251,8 @@ tags = ["HTML", "CSS", "JavaScript", "Python", "Django"]
 index = "05 — Parcours"
 title = "Entre les circuits et le code"
 paragraphs = [
-  "J'ai étudié l'électronique générale dans un institut technique de Goma, et je termine une licence en informatique, option intelligence artificielle, à l'ISIG Goma.",
-  "Aujourd'hui je construis des plateformes que des organisations de l'Est de la RDC utilisent chaque jour, et je les conçois pour les conditions dans lesquelles elles tournent. Quand un problème touche le matériel, j'écris aussi le firmware, et quand des données doivent être interprétées, j'amène l'apprentissage automatique sur l'appareil.",
+  "Je suis diplômé en électronique générale de l'ITIG Don Bosco de Goma, et je termine une licence en informatique, option intelligence artificielle, à l'ISIG Goma.",
+  "Mon travail couvre toute la chaîne : le circuit et son firmware, le traitement du signal et l'apprentissage automatique qui interprètent les données, et la plateforme web qui sert à les exploiter, pensée pour les conditions de l'Est de la RDC. Je forme aussi d'autres personnes, en programmation embarquée et en développement web.",
 ]
 education_title = "Formation"
 principles_title = "Ma façon de travailler"
