@@ -34,8 +34,6 @@ lead = "Des plateformes complètes en production, du firmware pour ESP32 et Ardu
 cta_work = "Voir les réalisations"
 cta_email = "M'écrire"
 portrait_alt = "Guelord Mwenderwa, assis, en gilet haute visibilité"
-caption_name = "Guelord Mwenderwa"
-caption_place = "Goma, RDC · UTC+2"
 status = "Ouvert aux collaborations"
 
 [[hero.facts]]
@@ -53,7 +51,7 @@ label = "formations conçues et animées à Goma"
 [work]
 index = "01 — Réalisations"
 title = "Plateformes en production"
-intro = "Chacune est dessinée en maquettes pour le téléphone et l'ordinateur, construite avec des tests et une intégration continue, puis mise en ligne et surveillée par moi. Elles sont présentées ici par leur site en ligne."
+intro = "Conçues, développées, mises en ligne et maintenues par moi, de la première maquette à la production."
 role_label = "Rôle"
 did_label = "Ce que j'ai fait"
 live = "En production"
@@ -73,9 +71,9 @@ bullets = [
   "Chaque écran dessiné d'abord en maquette, puis l'API Django et les applications React du personnel et des parents.",
   "Caisse qui marche hors ligne : chaque appareil numérote ses reçus et chaque écriture est idempotente, donc rien n'est compté deux fois au retour du réseau.",
   "Données de chaque école isolées deux fois, par l'application et par la Row Level Security de PostgreSQL, avec un journal des paiements, des notes et des rôles.",
-  "Hébergée sur un serveur AWS Lightsail de 2 Go derrière Caddy, avec sauvegardes hors serveur, suivi des erreurs et sonde de disponibilité.",
+  "Mise en production et surveillée, avec sauvegardes hors serveur et sonde de disponibilité.",
 ]
-stack = ["Django", "PostgreSQL", "Celery", "React", "TypeScript", "PWA", "Docker", "Caddy", "AWS"]
+stack = ["Django", "PostgreSQL", "Celery", "React", "TypeScript", "PWA", "Docker", "AWS"]
 desktop = "mwangaza-cash-desk"
 desktop_alt = "Caisse Mwangaza : les frais en retard d'un élève et un paiement saisi en dollars"
 mobile = "mwangaza-portal"
@@ -99,7 +97,7 @@ domain = "afronova-web.vercel.app"
 bullets = [
   "Toutes les pages publiques refaites à partir de maquettes, sur un système de design à jetons avec thèmes clair et sombre.",
   "Monorepo TypeScript : front React et Vite, API Express et Prisma, PostgreSQL.",
-  "Si l'API ne répond pas, le site affiche un contenu prévu à l'avance : le visiteur ne voit jamais de section vide.",
+  "Application métier interne et espace client sur la même API, avec des accès par rôle.",
   "176 tests automatisés sur l'application web, typage strict et lint dans la CI.",
 ]
 stack = ["React", "TypeScript", "Vite", "Tailwind CSS", "Express", "Prisma", "PostgreSQL", "Vercel", "Render"]
@@ -155,8 +153,8 @@ text = "Les bulletins reproduisent le formulaire national de l'EPST avec un QR d
 
 [[highlights.items]]
 project = "Mwangaza"
-title = "Rapide sur un serveur de 2 Go"
-text = "La mémoire est mesurée avant et après chaque changement : les grosses bibliothèques se chargent à la demande, les longs travaux passent par des files, et aucun PDF n'est produit pendant une requête web."
+title = "Rapide sur un serveur modeste"
+text = "Les performances sont mesurées avant et après chaque changement : les travaux lourds passent par des files, et les écrans restent rapides avec mille élèves."
 
 [[highlights.items]]
 project = "Edge AI"
@@ -168,7 +166,6 @@ index = "03 — Open source"
 title = "Matériel, IA et simulation"
 intro = "Chaque projet part des principes de base, a ses tests et son intégration continue, et dit ce qui a été validé et ce qui ne l'a pas été."
 view = "Voir sur GitHub"
-more_title = "Autres bibliothèques et outils"
 all_repos = "Tous les dépôts"
 contrib_title = "Contributions à d'autres projets"
 contrib_intro = "Les pull requests que j'ai proposées à des projets tenus par d'autres."
@@ -230,51 +227,6 @@ tags = ["Python", "Systèmes d'exploitation"]
 img = "scheduler"
 alt = "Diagrammes de Gantt de cinq algorithmes d'ordonnancement"
 
-[[open_source.more]]
-repo = "SYSTEME_DOMOTIQUE-_SALLE-_NFORMATIQUE"
-name = "Domotique d'une salle informatique"
-text = "ESP32 : double lecteur RFID, comptage, mesure d'énergie, éclairage, intrusion."
-
-[[open_source.more]]
-repo = "sgis-v2"
-name = "sgis-v2"
-text = "API REST de gestion scolaire, présences par QR et RFID."
-
-[[open_source.more]]
-repo = "arduino-component-tester"
-name = "arduino-component-tester"
-text = "Résistance à gamme automatique, capacité et identification des diodes."
-
-[[open_source.more]]
-repo = "electronics-toolkit"
-name = "electronics-toolkit"
-text = "Calculateur : code couleur, séries E, NE555, ampli-op, régulateurs."
-
-[[open_source.more]]
-repo = "logic-circuit-toolkit"
-name = "logic-circuit-toolkit"
-text = "Expressions booléennes, simplification de Quine-McCluskey, simulation de portes."
-
-[[open_source.more]]
-repo = "numerical-analysis-toolkit"
-name = "numerical-analysis-toolkit"
-text = "Racines, interpolation, intégration, Runge-Kutta, systèmes linéaires."
-
-[[open_source.more]]
-repo = "statistics-from-scratch"
-name = "statistics-from-scratch"
-text = "Lois, tests d'hypothèse et régression, validés contre SciPy."
-
-[[open_source.more]]
-repo = "ipv4-network-toolkit"
-name = "ipv4-network-toolkit"
-text = "Sous-réseaux, VLSM, agrégation de routes, routage à état de liens."
-
-[[open_source.more]]
-repo = "academic-records-database"
-name = "academic-records-database"
-text = "Schéma normalisé de dossiers académiques, testé sur SQLite et PostgreSQL."
-
 [teaching]
 index = "04 — Formation"
 title = "Les formations que je conçois et anime"
@@ -302,10 +254,6 @@ paragraphs = [
 education_title = "Formation"
 principles_title = "Ma façon de travailler"
 skills_title = "Compétences"
-photo_alt = "Goma et le lac Kivu vus des hauteurs"
-photo_caption = "Goma et le lac Kivu, là où je vis et travaille."
-photo_credit = "Photo : Ericnkurunziza, CC BY-SA 4.0"
-photo_source = "https://commons.wikimedia.org/wiki/File:Kivu,Goma_and_Rubavu_On_Rwanda_Side.jpg"
 
 [[about.education]]
 school = "ISIG Goma"
@@ -365,11 +313,6 @@ email = "guelsmwenderwa@gmail.com"
 email_cta = "M'écrire"
 linkedin = "LinkedIn"
 github = "GitHub"
-
-[footer]
-built = "HTML et CSS statiques, sans framework, hébergés sur GitHub Pages."
-source = "Code source"
-credits = "Photo de Goma et du lac Kivu : Ericnkurunziza, CC BY-SA 4.0. Les écrans des produits montrent des données de démonstration."
 
 [not_found]
 title = "Cette page n'existe pas."

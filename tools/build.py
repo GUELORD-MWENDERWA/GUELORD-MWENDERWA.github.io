@@ -19,7 +19,6 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = "https://guelord-mwenderwa.github.io"
 GITHUB = "https://github.com/GUELORD-MWENDERWA"
 LINKEDIN = "https://linkedin.com/in/guelord-mwenderwa"
-SOURCE = f"{GITHUB}/GUELORD-MWENDERWA.github.io"
 FONTS = (
     "https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500"
     "&family=Geist:wght@400;500;600;700&display=swap"
@@ -155,7 +154,6 @@ def hero(c: dict, base: str) -> str:
       <figure class="portrait-card">
         {portrait}
         <span class="status">{e(h["status"])}</span>
-        <figcaption class="portrait-meta"><strong>{e(h["caption_name"])}</strong><span>{e(h["caption_place"])}</span></figcaption>
       </figure>
     </div>
     <div class="facts">{facts}</div>
@@ -242,10 +240,6 @@ def open_source(c: dict, base: str, contributions: list[dict]) -> str:
     <span class="project-cta">{e(o["view"])}{icon("arrow-up-right")}</span>
   </div>
 </a>""" for p in o["featured"])
-    more = "".join(
-        f'<li><a href="{GITHUB}/{m["repo"]}"><strong>{e(m["name"])}</strong><span>{e(m["text"])}</span></a></li>'
-        for m in o["more"]
-    )
     contrib = ""
     if contributions:
         states = {"merged": o["merged"], "open": o["open"], "closed": o["closed"]}
@@ -264,10 +258,7 @@ def open_source(c: dict, base: str, contributions: list[dict]) -> str:
   <div class="container">
     {section_head(o["index"], o["title"], o["intro"], "open-source-title")}
     <div class="projects">{cards}</div>
-    <div class="more">
-      <div class="more-head"><h3>{e(o["more_title"])}</h3><a class="link-arrow" href="{GITHUB}?tab=repositories">{e(o["all_repos"])}{icon("arrow-up-right")}</a></div>
-      <ul class="more-list">{more}</ul>
-    </div>
+    <p class="all-repos"><a class="btn btn-outline" href="{GITHUB}?tab=repositories">{icon("github")}{e(o["all_repos"])}{icon("arrow-up-right")}</a></p>
     {contrib}
   </div>
 </section>"""
@@ -299,7 +290,6 @@ def about(c: dict, base: str) -> str:
     )
     principles = "".join(f'<li><strong>{e(p["title"])}</strong> {e(p["text"])}</li>' for p in a["principles"])
     skills = "".join(f'<div><dt>{e(s["area"])}</dt><dd>{e(s["items"])}</dd></div>' for s in a["skills"])
-    photo = picture(base, "goma", a["photo_alt"], "(min-width: 1024px) 480px, 92vw")
     return f"""
 <section class="section" id="about" aria-labelledby="about-title">
   <div class="container">
@@ -309,15 +299,12 @@ def about(c: dict, base: str) -> str:
         {paras}
         <h3 class="subhead">{e(a["education_title"])}</h3>
         <ul class="timeline">{edu}</ul>
+      </div>
+      <div class="about-side">
         <h3 class="subhead">{e(a["principles_title"])}</h3>
         <ul class="principles">{principles}</ul>
         <h3 class="subhead">{e(a["skills_title"])}</h3>
         <dl class="skills">{skills}</dl>
-      </div>
-      <div class="about-side">
-        <figure class="about-figure">{photo}
-          <figcaption>{e(a["photo_caption"])} <a href="{a["photo_source"]}">{e(a["photo_credit"])}</a></figcaption>
-        </figure>
       </div>
     </div>
   </div>
@@ -345,17 +332,10 @@ def contact(c: dict) -> str:
 </section>"""
 
 
-def footer(c: dict) -> str:
-    f = c["footer"]
+def footer() -> str:
     return f"""
 <footer class="site-footer">
-  <div class="container">
-    <div class="footer-inner">
-      <p>© {date.today().year} Guelord Mwenderwa · {e(f["built"])}</p>
-      <div class="footer-links"><a href="{GITHUB}">GitHub</a><a href="{LINKEDIN}">LinkedIn</a><a href="{SOURCE}">{e(f["source"])}</a></div>
-      <p class="credits">{e(f["credits"])}</p>
-    </div>
-  </div>
+  <div class="container"><div class="footer-inner"><p>© {date.today().year} Guelord Mwenderwa</p></div></div>
 </footer>"""
 
 
@@ -442,7 +422,7 @@ def page(c: dict, base: str, contributions: list[dict]) -> str:
         + about(c, base)
         + contact(c)
         + "\n</main>"
-        + footer(c)
+        + footer()
         + f'\n<script src="{base}assets/site.js" defer></script>\n</body>\n</html>\n'
     )
 

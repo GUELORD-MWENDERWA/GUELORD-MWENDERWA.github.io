@@ -69,7 +69,6 @@
       <figure class="portrait-card">
         <img src="assets/img/portrait-460.webp" srcset="assets/img/portrait-240.webp 240w, assets/img/portrait-460.webp 460w" sizes="(min-width: 1024px) 336px, (min-width: 400px) 336px, 86vw" width="460" height="460" alt="Guelord Mwenderwa, seated, wearing a high-visibility vest" fetchpriority="high">
         <span class="status">Open to collaboration</span>
-        <figcaption class="portrait-meta"><strong>Guelord Mwenderwa</strong><span>Goma, DR Congo · UTC+2</span></figcaption>
       </figure>
     </div>
     <div class="facts"><div class="fact"><span class="fact-value">3</span><span class="fact-label">platforms in production, used every day</span></div><div class="fact"><span class="fact-value">13</span><span class="fact-label">open source libraries with tests and CI</span></div><div class="fact"><span class="fact-value">2</span><span class="fact-label">courses designed and taught in Goma</span></div></div>
@@ -77,7 +76,7 @@
 </section>
 <section class="section" id="work" aria-labelledby="work-title">
   <div class="container">
-    <div class="section-head"><p class="section-index">01 — Selected work</p><h2 id="work-title">Platforms in production</h2><p>Each one is designed from mockups at phone and desktop widths, built with tests and continuous integration, then deployed and monitored by me. They are presented here through their live sites.</p></div>
+    <div class="section-head"><p class="section-index">01 — Selected work</p><h2 id="work-title">Platforms in production</h2><p>Designed, built, deployed and maintained by me, from the first mockup to production.</p></div>
     <div class="cases">
 <article class="case" id="mwangaza" aria-labelledby="mwangaza-title">
   <div class="case-visual">
@@ -95,8 +94,8 @@
     <div class="case-details">
       <p class="case-role">Role · <strong>Product, design, engineering and operations</strong></p>
       <p class="case-did">What I did</p>
-      <ul class="case-list"><li>Designed every screen as a mockup first, then built the Django API and the React applications for staff and parents.</li><li>Offline-first cash desk: each device numbers its own receipts and every write is idempotent, so nothing is counted twice when the network returns.</li><li>School data isolated twice, by the application and by PostgreSQL Row Level Security, with an audit trail on payments, grades and roles.</li><li>Runs on a 2 GB AWS Lightsail server behind Caddy, with off-site backups, error tracking and uptime checks.</li></ul>
-      <div class="chips"><span class="chip">Django</span><span class="chip">PostgreSQL</span><span class="chip">Celery</span><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">PWA</span><span class="chip">Docker</span><span class="chip">Caddy</span><span class="chip">AWS</span></div>
+      <ul class="case-list"><li>Designed every screen as a mockup first, then built the Django API and the React applications for staff and parents.</li><li>Offline-first cash desk: each device numbers its own receipts and every write is idempotent, so nothing is counted twice when the network returns.</li><li>School data isolated twice, by the application and by PostgreSQL Row Level Security, with an audit trail on payments, grades and roles.</li><li>Deployed and monitored in production, with off-site backups and uptime checks.</li></ul>
+      <div class="chips"><span class="chip">Django</span><span class="chip">PostgreSQL</span><span class="chip">Celery</span><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">PWA</span><span class="chip">Docker</span><span class="chip">AWS</span></div>
     </div>
   </div>
   <div class="gallery" role="group" aria-label="More screens" tabindex="0"><figure><img src="assets/img/mwangaza-dashboard-1184.webp" srcset="assets/img/mwangaza-dashboard-592.webp 592w, assets/img/mwangaza-dashboard-1184.webp 1184w" sizes="(min-width: 1024px) 270px, 72vw" width="1184" height="740" alt="Principal&#x27;s dashboard" loading="lazy" decoding="async"><figcaption>Principal&#x27;s dashboard</figcaption></figure><figure><img src="assets/img/mwangaza-grades-1184.webp" srcset="assets/img/mwangaza-grades-592.webp 592w, assets/img/mwangaza-grades-1184.webp 1184w" sizes="(min-width: 1024px) 270px, 72vw" width="1184" height="740" alt="Grade entry" loading="lazy" decoding="async"><figcaption>Grade entry</figcaption></figure><figure><img src="assets/img/mwangaza-unpaid-1184.webp" srcset="assets/img/mwangaza-unpaid-592.webp 592w, assets/img/mwangaza-unpaid-1184.webp 1184w" sizes="(min-width: 1024px) 270px, 72vw" width="1184" height="740" alt="Unpaid fees" loading="lazy" decoding="async"><figcaption>Unpaid fees</figcaption></figure><figure><img src="assets/img/mwangaza-site-1200.webp" srcset="assets/img/mwangaza-site-720.webp 720w, assets/img/mwangaza-site-1200.webp 1200w" sizes="(min-width: 1024px) 270px, 72vw" width="1200" height="750" alt="Public website" loading="lazy" decoding="async"><figcaption>Public website</figcaption></figure></div>
@@ -117,7 +116,7 @@
     <div class="case-details">
       <p class="case-role">Role · <strong>Design and full-stack engineering</strong></p>
       <p class="case-did">What I did</p>
-      <ul class="case-list"><li>Redesigned every public page from mockups, on a design system of tokens with light and dark themes.</li><li>TypeScript monorepo: React and Vite front end, Express and Prisma API, PostgreSQL.</li><li>The site falls back to curated content when the API is unreachable, so visitors never see an empty section.</li><li>176 automated tests on the web application, strict typing and linting in CI.</li></ul>
+      <ul class="case-list"><li>Redesigned every public page from mockups, on a design system of tokens with light and dark themes.</li><li>TypeScript monorepo: React and Vite front end, Express and Prisma API, PostgreSQL.</li><li>Internal business application and client portal on the same API, with role-based access.</li><li>176 automated tests on the web application, strict typing and linting in CI.</li></ul>
       <div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Vite</span><span class="chip">Tailwind CSS</span><span class="chip">Express</span><span class="chip">Prisma</span><span class="chip">PostgreSQL</span><span class="chip">Vercel</span><span class="chip">Render</span></div>
     </div>
   </div>
@@ -150,7 +149,7 @@
 <section class="section" id="highlights" aria-labelledby="highlights-title">
   <div class="container">
     <div class="section-head"><p class="section-index">02 — Highlights</p><h2 id="highlights-title">Problems I have solved</h2><p>The constraints of the field shape the engineering: unstable networks, two currencies, shared phones and modest servers.</p></div>
-    <div class="highlights"><article class="highlight"><p class="mono">Mwangaza</p><h3>Receipts without a server</h3><p>A school cash desk keeps taking payments during network cuts. Receipts are numbered on the device and synchronised with idempotent writes when the connection comes back.</p></article><article class="highlight"><p class="mono">Mwangaza</p><h3>Money without rounding errors</h3><p>Amounts are stored as integers, in cents and francs, with an explicit exchange rate. Payments are immutable: a correction is a new record, never an edit.</p></article><article class="highlight"><p class="mono">Mwangaza</p><h3>Many schools, one database, no leaks</h3><p>Every query is scoped to its school, and PostgreSQL Row Level Security enforces it again underneath, with tests that try to read another school&#x27;s data.</p></article><article class="highlight"><p class="mono">Mwangaza</p><h3>The official report card</h3><p>Report cards reproduce the national EPST form with an authenticity QR code, or print only the grades onto a school&#x27;s pre-printed sheets.</p></article><article class="highlight"><p class="mono">Mwangaza</p><h3>Fast on a 2 GB server</h3><p>Memory is measured before and after each change: heavy libraries load on demand, long jobs run in background queues, and no PDF is built inside a web request.</p></article><article class="highlight"><p class="mono">Edge AI</p><h3>A neural network on a microcontroller</h3><p>A 172-parameter model diagnoses motor faults on an ESP32, and a parity test proves that the firmware computes what the model learned in Python.</p></article></div>
+    <div class="highlights"><article class="highlight"><p class="mono">Mwangaza</p><h3>Receipts without a server</h3><p>A school cash desk keeps taking payments during network cuts. Receipts are numbered on the device and synchronised with idempotent writes when the connection comes back.</p></article><article class="highlight"><p class="mono">Mwangaza</p><h3>Money without rounding errors</h3><p>Amounts are stored as integers, in cents and francs, with an explicit exchange rate. Payments are immutable: a correction is a new record, never an edit.</p></article><article class="highlight"><p class="mono">Mwangaza</p><h3>Many schools, one database, no leaks</h3><p>Every query is scoped to its school, and PostgreSQL Row Level Security enforces it again underneath, with tests that try to read another school&#x27;s data.</p></article><article class="highlight"><p class="mono">Mwangaza</p><h3>The official report card</h3><p>Report cards reproduce the national EPST form with an authenticity QR code, or print only the grades onto a school&#x27;s pre-printed sheets.</p></article><article class="highlight"><p class="mono">Mwangaza</p><h3>Fast on a modest server</h3><p>Performance is measured before and after each change: heavy work runs in background queues, so screens stay fast with a thousand students.</p></article><article class="highlight"><p class="mono">Edge AI</p><h3>A neural network on a microcontroller</h3><p>A 172-parameter model diagnoses motor faults on an ESP32, and a parity test proves that the firmware computes what the model learned in Python.</p></article></div>
   </div>
 </section>
 <section class="section" id="open-source" aria-labelledby="open-source-title">
@@ -217,10 +216,7 @@
     <span class="project-cta">View on GitHub<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></svg></span>
   </div>
 </a></div>
-    <div class="more">
-      <div class="more-head"><h3>More libraries and tools</h3><a class="link-arrow" href="https://github.com/GUELORD-MWENDERWA?tab=repositories">All repositories<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></svg></a></div>
-      <ul class="more-list"><li><a href="https://github.com/GUELORD-MWENDERWA/SYSTEME_DOMOTIQUE-_SALLE-_NFORMATIQUE"><strong>Computer lab automation</strong><span>ESP32: dual RFID access, occupancy, energy metering, lighting, intrusion.</span></a></li><li><a href="https://github.com/GUELORD-MWENDERWA/sgis-v2"><strong>sgis-v2</strong><span>School management REST API with QR and RFID attendance.</span></a></li><li><a href="https://github.com/GUELORD-MWENDERWA/arduino-component-tester"><strong>arduino-component-tester</strong><span>Auto-ranging resistance, capacitance and diode identification.</span></a></li><li><a href="https://github.com/GUELORD-MWENDERWA/electronics-toolkit"><strong>electronics-toolkit</strong><span>Design calculator: colour codes, E-series, NE555, op-amps, regulators.</span></a></li><li><a href="https://github.com/GUELORD-MWENDERWA/logic-circuit-toolkit"><strong>logic-circuit-toolkit</strong><span>Boolean parsing, Quine-McCluskey minimisation, gate simulation.</span></a></li><li><a href="https://github.com/GUELORD-MWENDERWA/numerical-analysis-toolkit"><strong>numerical-analysis-toolkit</strong><span>Root finding, interpolation, quadrature, Runge-Kutta, linear solvers.</span></a></li><li><a href="https://github.com/GUELORD-MWENDERWA/statistics-from-scratch"><strong>statistics-from-scratch</strong><span>Distributions, hypothesis tests and regression, validated against SciPy.</span></a></li><li><a href="https://github.com/GUELORD-MWENDERWA/ipv4-network-toolkit"><strong>ipv4-network-toolkit</strong><span>Subnetting, VLSM, route summarisation and link-state routing.</span></a></li><li><a href="https://github.com/GUELORD-MWENDERWA/academic-records-database"><strong>academic-records-database</strong><span>Normalised academic records schema, tested on SQLite and PostgreSQL.</span></a></li></ul>
-    </div>
+    <p class="all-repos"><a class="btn btn-outline" href="https://github.com/GUELORD-MWENDERWA?tab=repositories"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2 0 1.9 1.2 1.9 1.2 1 1.8 2.8 1.3 3.5 1 0-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.3-3.1-.2-.4-.6-1.6 0-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.9.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.1.9 2.2v3.3c0 .3.1.7.8.6A12 12 0 0 0 12 .3"/></svg>All repositories<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></svg></a></p>
     
   </div>
 </section>
@@ -248,15 +244,12 @@
         <p>I trained in general electronics at a technical institute in Goma, and I am completing a Licence in Computer Science, Artificial Intelligence track, at ISIG Goma.</p><p>Today I build platforms that organisations in the eastern DR Congo use every day, and I design them for the conditions they run in. When a problem touches hardware, I write the firmware too, and when data needs interpreting, I bring the machine learning onto the device.</p>
         <h3 class="subhead">Education</h3>
         <ul class="timeline"><li><strong>ISIG Goma</strong><span>Licence in Computer Science, Artificial Intelligence track (LSI-IA)</span><span class="mono">In progress · second year</span></li><li><strong>ITIG Don Bosco, Goma</strong><span>Technical diploma in General Electronics</span><span class="mono">Completed</span></li></ul>
+      </div>
+      <div class="about-side">
         <h3 class="subhead">How I work</h3>
         <ul class="principles"><li><strong>Verify against a reference.</strong> Numerical code is checked against analytical results or established libraries, and firmware logic is unit-tested on the host before it reaches hardware.</li><li><strong>Make the model and the device agree.</strong> When an algorithm is trained on a computer and deployed on a microcontroller, a test proves that both compute the same thing.</li><li><strong>Mockups before code.</strong> Every screen is drawn at phone and desktop widths before it is built, with real content from the domain.</li><li><strong>State limits honestly.</strong> Every project says what has been validated and what has not.</li></ul>
         <h3 class="subhead">Skills</h3>
         <dl class="skills"><div><dt>Back end</dt><dd>Django, Django REST Framework, Celery, Node.js, Express, Prisma, REST, JWT</dd></div><div><dt>Front end</dt><dd>React, TypeScript, Vite, Tailwind CSS, offline-first PWAs (Dexie), HTML, CSS</dd></div><div><dt>Data and infrastructure</dt><dd>PostgreSQL, Row Level Security, Redis, SQLite, Firebase, Supabase, Docker, Caddy, AWS Lightsail, Vercel, Render, GitHub Actions, Linux</dd></div><div><dt>Embedded</dt><dd>C and C++, Arduino, ESP32, ESP8266, STM32, PlatformIO, ESPHome, UART, SPI, I2C, ADC sampling, OTA</dd></div><div><dt>Electronics</dt><dd>Analog and digital design, power supplies, sensors, RFID, 433 MHz RF, KiCad, Proteus, circuit simulation</dd></div><div><dt>AI and data</dt><dd>Python, NumPy, pandas, scikit-learn, OpenCV, TensorFlow, neural networks, embedded inference, statistics</dd></div></dl>
-      </div>
-      <div class="about-side">
-        <figure class="about-figure"><img src="assets/img/goma-1200.webp" srcset="assets/img/goma-600.webp 600w, assets/img/goma-1200.webp 1200w" sizes="(min-width: 1024px) 480px, 92vw" width="1200" height="800" alt="Goma and Lake Kivu seen from the hills" loading="lazy" decoding="async">
-          <figcaption>Goma and Lake Kivu, where I live and work. <a href="https://commons.wikimedia.org/wiki/File:Kivu,Goma_and_Rubavu_On_Rwanda_Side.jpg">Photo: Ericnkurunziza, CC BY-SA 4.0</a></figcaption>
-        </figure>
       </div>
     </div>
   </div>
@@ -279,13 +272,7 @@
 </section>
 </main>
 <footer class="site-footer">
-  <div class="container">
-    <div class="footer-inner">
-      <p>© 2026 Guelord Mwenderwa · Static HTML and CSS, no framework, hosted on GitHub Pages.</p>
-      <div class="footer-links"><a href="https://github.com/GUELORD-MWENDERWA">GitHub</a><a href="https://linkedin.com/in/guelord-mwenderwa">LinkedIn</a><a href="https://github.com/GUELORD-MWENDERWA/GUELORD-MWENDERWA.github.io">Source</a></div>
-      <p class="credits">Photo of Goma and Lake Kivu: Ericnkurunziza, CC BY-SA 4.0. Product screens use demonstration data.</p>
-    </div>
-  </div>
+  <div class="container"><div class="footer-inner"><p>© 2026 Guelord Mwenderwa</p></div></div>
 </footer>
 <script src="assets/site.js" defer></script>
 </body>

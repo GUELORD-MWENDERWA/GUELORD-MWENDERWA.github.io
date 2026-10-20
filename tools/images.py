@@ -32,7 +32,6 @@ IMAGES = {
     "ml": ("tech-ml-from-scratch-decision_boundaries.png", (800, 400), 16 / 10),
     "scheduler": ("tech-os-scheduling-simulator-gantt.png", (800, 400), 16 / 10),
     "portrait": ("avatar.jpg", (460, 240), 1.0),
-    "goma": ("goma-lac-kivu.webp", (1200, 600), 3 / 2),
 }
 
 

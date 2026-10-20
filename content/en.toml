@@ -34,8 +34,6 @@ lead = "Full-stack platforms in production, firmware for ESP32 and Arduino, and 
 cta_work = "See selected work"
 cta_email = "Email me"
 portrait_alt = "Guelord Mwenderwa, seated, wearing a high-visibility vest"
-caption_name = "Guelord Mwenderwa"
-caption_place = "Goma, DR Congo · UTC+2"
 status = "Open to collaboration"
 
 [[hero.facts]]
@@ -53,7 +51,7 @@ label = "courses designed and taught in Goma"
 [work]
 index = "01 — Selected work"
 title = "Platforms in production"
-intro = "Each one is designed from mockups at phone and desktop widths, built with tests and continuous integration, then deployed and monitored by me. They are presented here through their live sites."
+intro = "Designed, built, deployed and maintained by me, from the first mockup to production."
 role_label = "Role"
 did_label = "What I did"
 live = "In production"
@@ -73,9 +71,9 @@ bullets = [
   "Designed every screen as a mockup first, then built the Django API and the React applications for staff and parents.",
   "Offline-first cash desk: each device numbers its own receipts and every write is idempotent, so nothing is counted twice when the network returns.",
   "School data isolated twice, by the application and by PostgreSQL Row Level Security, with an audit trail on payments, grades and roles.",
-  "Runs on a 2 GB AWS Lightsail server behind Caddy, with off-site backups, error tracking and uptime checks.",
+  "Deployed and monitored in production, with off-site backups and uptime checks.",
 ]
-stack = ["Django", "PostgreSQL", "Celery", "React", "TypeScript", "PWA", "Docker", "Caddy", "AWS"]
+stack = ["Django", "PostgreSQL", "Celery", "React", "TypeScript", "PWA", "Docker", "AWS"]
 desktop = "mwangaza-cash-desk"
 desktop_alt = "Mwangaza cash desk: a student's overdue fees and a payment being entered in US dollars"
 mobile = "mwangaza-portal"
@@ -99,7 +97,7 @@ domain = "afronova-web.vercel.app"
 bullets = [
   "Redesigned every public page from mockups, on a design system of tokens with light and dark themes.",
   "TypeScript monorepo: React and Vite front end, Express and Prisma API, PostgreSQL.",
-  "The site falls back to curated content when the API is unreachable, so visitors never see an empty section.",
+  "Internal business application and client portal on the same API, with role-based access.",
   "176 automated tests on the web application, strict typing and linting in CI.",
 ]
 stack = ["React", "TypeScript", "Vite", "Tailwind CSS", "Express", "Prisma", "PostgreSQL", "Vercel", "Render"]
@@ -155,8 +153,8 @@ text = "Report cards reproduce the national EPST form with an authenticity QR co
 
 [[highlights.items]]
 project = "Mwangaza"
-title = "Fast on a 2 GB server"
-text = "Memory is measured before and after each change: heavy libraries load on demand, long jobs run in background queues, and no PDF is built inside a web request."
+title = "Fast on a modest server"
+text = "Performance is measured before and after each change: heavy work runs in background queues, so screens stay fast with a thousand students."
 
 [[highlights.items]]
 project = "Edge AI"
@@ -168,7 +166,6 @@ index = "03 — Open source"
 title = "Hardware, AI and simulation"
 intro = "Each project implements its subject from first principles, ships with tests and continuous integration, and documents what has and has not been validated."
 view = "View on GitHub"
-more_title = "More libraries and tools"
 all_repos = "All repositories"
 contrib_title = "Contributions to other projects"
 contrib_intro = "Pull requests I have opened on projects maintained by others."
@@ -230,51 +227,6 @@ tags = ["Python", "Operating systems"]
 img = "scheduler"
 alt = "Gantt charts of five CPU scheduling algorithms"
 
-[[open_source.more]]
-repo = "SYSTEME_DOMOTIQUE-_SALLE-_NFORMATIQUE"
-name = "Computer lab automation"
-text = "ESP32: dual RFID access, occupancy, energy metering, lighting, intrusion."
-
-[[open_source.more]]
-repo = "sgis-v2"
-name = "sgis-v2"
-text = "School management REST API with QR and RFID attendance."
-
-[[open_source.more]]
-repo = "arduino-component-tester"
-name = "arduino-component-tester"
-text = "Auto-ranging resistance, capacitance and diode identification."
-
-[[open_source.more]]
-repo = "electronics-toolkit"
-name = "electronics-toolkit"
-text = "Design calculator: colour codes, E-series, NE555, op-amps, regulators."
-
-[[open_source.more]]
-repo = "logic-circuit-toolkit"
-name = "logic-circuit-toolkit"
-text = "Boolean parsing, Quine-McCluskey minimisation, gate simulation."
-
-[[open_source.more]]
-repo = "numerical-analysis-toolkit"
-name = "numerical-analysis-toolkit"
-text = "Root finding, interpolation, quadrature, Runge-Kutta, linear solvers."
-
-[[open_source.more]]
-repo = "statistics-from-scratch"
-name = "statistics-from-scratch"
-text = "Distributions, hypothesis tests and regression, validated against SciPy."
-
-[[open_source.more]]
-repo = "ipv4-network-toolkit"
-name = "ipv4-network-toolkit"
-text = "Subnetting, VLSM, route summarisation and link-state routing."
-
-[[open_source.more]]
-repo = "academic-records-database"
-name = "academic-records-database"
-text = "Normalised academic records schema, tested on SQLite and PostgreSQL."
-
 [teaching]
 index = "04 — Teaching"
 title = "Courses I design and teach"
@@ -302,10 +254,6 @@ paragraphs = [
 education_title = "Education"
 principles_title = "How I work"
 skills_title = "Skills"
-photo_alt = "Goma and Lake Kivu seen from the hills"
-photo_caption = "Goma and Lake Kivu, where I live and work."
-photo_credit = "Photo: Ericnkurunziza, CC BY-SA 4.0"
-photo_source = "https://commons.wikimedia.org/wiki/File:Kivu,Goma_and_Rubavu_On_Rwanda_Side.jpg"
 
 [[about.education]]
 school = "ISIG Goma"
@@ -365,11 +313,6 @@ email = "guelsmwenderwa@gmail.com"
 email_cta = "Write to me"
 linkedin = "LinkedIn"
 github = "GitHub"
-
-[footer]
-built = "Static HTML and CSS, no framework, hosted on GitHub Pages."
-source = "Source"
-credits = "Photo of Goma and Lake Kivu: Ericnkurunziza, CC BY-SA 4.0. Product screens use demonstration data."
 
 [not_found]
 title = "This page does not exist."
