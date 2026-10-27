@@ -6,7 +6,7 @@ lang = "fr"
 path = "/fr/"
 og_locale = "fr_FR"
 title = "Guelord Mwenderwa — Ingénieur systèmes embarqués et IA à Goma, RDC"
-description = "Ingénieur systèmes embarqués et IA à Goma, RDC : électronique, firmware ESP32, apprentissage automatique sur microcontrôleur et plateformes web en production pour des écoles et des entreprises. Formateur en programmation embarquée et en développement web."
+description = "Ingénieur systèmes embarqués et IA à Goma, RDC : électronique, firmware ESP32, apprentissage automatique sur microcontrôleur ; chef du département informatique chez DTMS, aujourd'hui Afronova, où il participe aux plateformes web en production. Formateur en programmation embarquée et en développement web."
 job_title = "Ingénieur systèmes embarqués et IA"
 alt_path = "/"
 alt_lang = "en"
@@ -31,7 +31,7 @@ email_cta = "M'écrire"
 eyebrow = "Ingénieur systèmes embarqués et IA · Goma, RDC"
 title_before = "Électronique, firmware, IA et plateformes web : "
 title_accent = "je construis le système entier, du circuit jusqu'au cloud."
-lead = "Je conçois des circuits et du firmware ESP32, j'amène l'apprentissage automatique sur les microcontrôleurs, et je construis les plateformes web que des écoles et des entreprises de la RDC utilisent chaque jour, jusqu'au serveur qui les héberge. Je conçois et j'anime aussi des formations en programmation embarquée et en développement web."
+lead = "Je conçois des circuits et du firmware ESP32 et j'amène l'apprentissage automatique sur les microcontrôleurs. Chef du département informatique chez DTMS, aujourd'hui Afronova, à Goma, je participe avec l'équipe aux plateformes web que des écoles et des entreprises de la RDC utilisent chaque jour. Je conçois et j'anime aussi des formations en programmation embarquée et en développement web."
 fields_label = "Mes domaines"
 fields = ["Électronique", "Firmware embarqué", "IA et apprentissage automatique", "Web full-stack", "DevOps", "Formation"]
 cta_work = "Voir les réalisations"
@@ -41,7 +41,7 @@ status = "Ouvert aux collaborations"
 
 [[hero.facts]]
 value = "3"
-label = "plateformes en production, utilisées chaque jour"
+label = "plateformes en production auxquelles j'ai participé"
 
 [[hero.facts]]
 value = "13"
@@ -54,9 +54,9 @@ label = "formations conçues et animées à Goma"
 [work]
 index = "01 — Réalisations"
 title = "Plateformes en production"
-intro = "Conçues, développées, mises en ligne et maintenues par moi, de la première maquette à la production."
+intro = "Des projets de DTMS, aujourd'hui Afronova, l'entreprise où je suis chef du département informatique. J'y ai participé comme membre de l'équipe, de la maquette à la production."
 role_label = "Rôle"
-did_label = "Ce que j'ai fait"
+did_label = "Ma contribution"
 live = "En production"
 visit = "Visiter"
 gallery_label = "Autres écrans"
@@ -66,8 +66,8 @@ id = "mwangaza"
 number = "Projet 01"
 name = "Mwangaza School"
 tagline = "La gestion scolaire pour la RDC, pensée pour marcher sans internet."
-summary = "Élèves et familles, frais en dollars et en francs congolais, une caisse qui imprime les reçus, le suivi des impayés, les notes, les délibérations et les bulletins, et un espace où les parents suivent les paiements sur leur téléphone. Conçue avec une école technique de Goma."
-role = "Produit, design, développement et exploitation"
+summary = "Élèves et familles, frais en dollars et en francs congolais, une caisse qui imprime les reçus, le suivi des impayés, les notes, les délibérations et les bulletins, et un espace où les parents suivent les paiements sur leur téléphone. Un produit de DTMS, aujourd'hui Afronova, pensé avec une école technique de Goma."
+role = "Membre de l'équipe : produit, développement et exploitation"
 url = "https://mwangazaschool.com/"
 domain = "mwangazaschool.com"
 bullets = [
@@ -93,8 +93,8 @@ id = "afronova"
 number = "Projet 02"
 name = "Afronova"
 tagline = "La nouvelle plateforme de DTMS, refaite sous le nom Afronova."
-summary = "DTMS, une entreprise de Goma en réseaux, logiciels, électronique et énergie, est devenue Afronova. J'ai refait sa plateforme en TypeScript : un site public bilingue, une application métier interne et un espace client."
-role = "Design et développement full-stack"
+summary = "DTMS, une entreprise de Goma en réseaux, logiciels, électronique et énergie, est devenue Afronova. L'équipe a refait sa plateforme en TypeScript, et j'y ai participé : un site public bilingue, une application métier interne et un espace client."
+role = "Membre de l'équipe : design et développement full-stack"
 url = "https://afronova-web.vercel.app/"
 domain = "afronova-web.vercel.app"
 bullets = [
@@ -115,7 +115,7 @@ number = "Projet 03"
 name = "DTMS"
 tagline = "La première génération de la plateforme, toujours en ligne."
 summary = "Dynamic Technology Multi Services, aujourd'hui Afronova, travaille en informatique, télécommunications, électronique et installations électriques. Cette première plateforme fonctionne par modules sur Firebase : personnel, projets, clients, opérations et finances."
-role = "Design et développement"
+role = "Membre de l'équipe : design et développement"
 url = "https://dtms.site/"
 domain = "dtms.site"
 bullets = [
@@ -131,7 +131,7 @@ mobile_alt = "Accueil de DTMS sur un téléphone"
 
 [highlights]
 index = "03 — Points forts"
-title = "Des problèmes que j'ai résolus"
+title = "Des problèmes résolus"
 intro = "Les contraintes du terrain façonnent la technique : réseau instable, deux monnaies, téléphones partagés et serveurs modestes."
 
 [[highlights.items]]
@@ -251,7 +251,7 @@ tags = ["HTML", "CSS", "JavaScript", "Python", "Django"]
 index = "05 — Parcours"
 title = "Entre les circuits et le code"
 paragraphs = [
-  "Je suis diplômé en électronique générale de l'ITIG Don Bosco de Goma, et je termine une licence en informatique, option intelligence artificielle, à l'ISIG Goma.",
+  "Je suis diplômé en électronique générale de l'ITIG Don Bosco de Goma, et je termine une licence en informatique, option intelligence artificielle, à l'ISIG Goma. Je suis chef du département informatique chez DTMS, aujourd'hui Afronova, où je travaille en équipe sur Mwangaza School et sur les plateformes de l'entreprise.",
   "Mon travail couvre toute la chaîne : le circuit et son firmware, le traitement du signal et l'apprentissage automatique qui interprètent les données, et la plateforme web qui sert à les exploiter, pensée pour les conditions de l'Est de la RDC. Je forme aussi d'autres personnes, en programmation embarquée et en développement web.",
 ]
 education_title = "Formation"
