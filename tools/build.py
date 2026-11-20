@@ -49,7 +49,7 @@ def icon(name: str, cls: str = "") -> str:
     return f'<svg{css} viewBox="0 0 24 24" aria-hidden="true" focusable="false">{paths[name]}</svg>'
 
 
-# Marque : une piste de circuit imprimé qui dessine un G et finit sur une pastille de cuivre.
+# Marque : une piste de circuit imprimé qui dessine un G et finit sur une pastille verte.
 MARK = (
     '<svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">'
     '<path d="M47 17H25l-9 9v12l9 9h14l8-8v-7H35" fill="none" stroke="currentColor" stroke-width="6" '
@@ -57,7 +57,7 @@ MARK = (
     '<circle class="via" cx="35" cy="32" r="6.5"/></svg>'
 )
 
-# Pistes décoratives du héros et du bloc contact (couleur des lignes, une pastille cuivre).
+# Pistes décoratives du héros et du bloc contact (couleur des lignes, une pastille verte).
 TRACES = (
     '<svg class="{cls}" viewBox="0 0 720 640" fill="none" aria-hidden="true" focusable="false">'
     '<g stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">'
@@ -341,7 +341,7 @@ def contact(c: dict) -> str:
       <h2 id="contact-title">{e(k["title"])}</h2>
       <p>{e(k["text"])}</p>
       <div class="contact-actions">
-        <a class="btn btn-copper" href="mailto:{k["email"]}">{icon("mail")}{e(k["email_cta"])}</a>
+        <a class="btn btn-accent" href="mailto:{k["email"]}">{icon("mail")}{e(k["email_cta"])}</a>
         <a class="btn btn-outline" href="{LINKEDIN}" rel="me">{icon("linkedin")}{e(k["linkedin"])}</a>
         <a class="btn btn-outline" href="{GITHUB}" rel="me">{icon("github")}{e(k["github"])}</a>
       </div>
@@ -401,8 +401,8 @@ def head(c: dict, base: str, *, title: str, description: str, canonical: str, in
 {robots}
 <link rel="canonical" href="{canonical}">
 {alternates if index else ""}
-<meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#11100f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f5f8fa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b1424" media="(prefers-color-scheme: dark)">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(description)}">
@@ -474,17 +474,17 @@ def og_card(c: dict) -> str:
 <link rel="stylesheet" href="{FONTS}">
 <style>
 *{{box-sizing:border-box;margin:0}}
-body{{width:1200px;height:630px;background:#11100f;color:#f3efea;font-family:Geist,sans-serif;overflow:hidden;position:relative}}
+body{{width:1200px;height:630px;background:#0b1424;color:#f3f7f9;font-family:Geist,sans-serif;overflow:hidden;position:relative}}
 .wrap{{position:absolute;inset:0;padding:64px 72px;display:grid;grid-template-columns:1fr 300px;gap:56px;align-items:center}}
-.k{{font-family:'Geist Mono',monospace;font-size:20px;letter-spacing:.08em;text-transform:uppercase;color:#a39a91;display:flex;align-items:center;gap:14px}}
-.k::before{{content:"";width:32px;height:3px;background:#e79a6b;border-radius:2px}}
+.k{{font-family:'Geist Mono',monospace;font-size:20px;letter-spacing:.08em;text-transform:uppercase;color:#94a3b8;display:flex;align-items:center;gap:14px}}
+.k::before{{content:"";width:32px;height:3px;background:#00b37a;border-radius:2px}}
 h1{{margin-top:22px;font-size:58px;line-height:1.05;letter-spacing:-.03em;font-weight:600}}
-h1 em{{font-style:normal;color:#e79a6b}}
+h1 em{{font-style:normal;color:#00b37a}}
 .facts{{display:flex;gap:40px;margin-top:40px}}
-.f{{display:grid;gap:4px;max-width:200px}} .f b{{font-family:'Geist Mono',monospace;font-size:36px;font-weight:500}} .f span{{font-size:17px;color:#cfc7bf;line-height:1.3}}
-img{{width:300px;height:300px;object-fit:cover;border-radius:20px;border:1px solid #2d2926}}
-.name{{margin-top:16px;font-weight:600;font-size:22px}} .url{{font-family:'Geist Mono',monospace;color:#a39a91;font-size:16px;margin-top:4px}}
-svg.t{{position:absolute;right:-60px;top:-40px;width:720px;color:#2d2926}} svg.t .via{{fill:#11100f;stroke:#3a3531}} svg.t .via-live{{fill:#e79a6b}}
+.f{{display:grid;gap:4px;max-width:200px}} .f b{{font-family:'Geist Mono',monospace;font-size:36px;font-weight:500}} .f span{{font-size:17px;color:#c4cfdb;line-height:1.3}}
+img{{width:300px;height:300px;object-fit:cover;border-radius:20px;border:1px solid #22314b}}
+.name{{margin-top:16px;font-weight:600;font-size:22px}} .url{{font-family:'Geist Mono',monospace;color:#94a3b8;font-size:16px;margin-top:4px}}
+svg.t{{position:absolute;right:-60px;top:-40px;width:720px;color:#22314b}} svg.t .via{{fill:#0b1424;stroke:#2a3a55}} svg.t .via-live{{fill:#00b37a}}
 </style></head><body>{TRACES.format(cls="t")}
 <div class="wrap"><div><p class="k">{e(h["eyebrow"])}</p><h1>{e(h["title_before"])}<em>{e(h["title_accent"])}</em></h1><div class="facts">{facts}</div></div>
 <div><img src="../assets/img/portrait-460.webp" alt=""><p class="name">Guelord Mwenderwa</p><p class="url">guelord-mwenderwa.github.io</p></div></div>

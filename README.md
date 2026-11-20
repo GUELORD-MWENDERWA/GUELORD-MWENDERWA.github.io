@@ -39,7 +39,7 @@ node tools/apercu.mjs index.html fr/index.html --sombre --serveur http://127.0.0
 
 ## Design
 
-- Copper accent, the metal of printed circuit traces and of the DR Congo's copper belt, on warm neutrals tinted towards it. Every text colour passes WCAG AA (4.5:1) in both themes.
+- Night blue and a lit green accent, the same colours as DTMS and Mwangaza, on cool neutrals. Every text colour passes WCAG AA (4.5:1) in both themes.
 - Geist and Geist Mono; one type scale of eight sizes; three radii; two shadows.
 - Mockup first: the page itself is the mockup, captured at phone (390 px) and desktop (1440 px) widths in `docs/maquettes/`.
 

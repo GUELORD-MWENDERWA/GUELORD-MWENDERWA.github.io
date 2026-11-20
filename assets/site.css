@@ -1,31 +1,31 @@
 /* Portfolio de Guelord Mwenderwa — une seule feuille de style.
    Jetons : couleurs par rôle (clair et sombre), une échelle de texte, trois rayons, deux ombres.
-   Cuivre : le métal des pistes de circuit imprimé et celui du Katanga. Neutres chauds, teintés du cuivre. */
+   Nuit et vert allumé, comme DTMS et Mwangaza. Neutres froids, teintés de la nuit. */
 
 :root {
-  --surface: #fbfaf8;
-  --sunken: #f3f1ee;
+  --surface: #f5f8fa;
+  --sunken: #eaf0f3;
   --card: #ffffff;
-  --ink: #161412;
-  --ink-2: #45403b;
-  --ink-3: #6b645d;
-  --line: #e4dfd9;
-  --line-soft: #efebe6;
-  --control: #8e857c;
-  --copper: #a64b1c;
-  --copper-strong: #8a3b12;
-  --copper-soft: #f6e7dd;
-  --on-copper: #ffffff;
-  --live: #1d7a4c;
+  --ink: #0b1424;
+  --ink-2: #38445a;
+  --ink-3: #5b677c;
+  --line: #dbe3ea;
+  --line-soft: #e8eef2;
+  --control: #7a879a;
+  --accent: #00875c;
+  --accent-strong: #006a48;
+  --accent-soft: #e3f6ee;
+  --on-accent: #ffffff;
+  --live: #00875c;
   --figure: #ffffff;
-  --contact-bg: #161412;
-  --contact-ink: #f3efea;
-  --contact-ink-2: #cfc7bf;
-  --contact-control: #6e665f;
+  --contact-bg: #0b1424;
+  --contact-ink: #f3f7f9;
+  --contact-ink-2: #c4cfdb;
+  --contact-control: #5f6d82;
   --contact-hover: rgb(255 255 255 / 0.06);
-  --contact-line: #2d2926;
-  --contact-via: #3a3531;
-  --contact-accent: #e79a6b;
+  --contact-line: #22314b;
+  --contact-via: #2a3a55;
+  --contact-accent: #00b37a;
 
   --font: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
@@ -45,8 +45,8 @@
   --r-lg: 20px;
   --r-pill: 999px;
 
-  --shadow-1: 0 1px 2px rgb(22 20 18 / 0.06), 0 1px 1px rgb(22 20 18 / 0.04);
-  --shadow-2: 0 18px 40px -18px rgb(22 20 18 / 0.28), 0 4px 12px -6px rgb(22 20 18 / 0.12);
+  --shadow-1: 0 1px 2px rgb(11 20 36 / 0.06), 0 1px 1px rgb(11 20 36 / 0.04);
+  --shadow-2: 0 18px 40px -18px rgb(11 20 36 / 0.28), 0 4px 12px -6px rgb(11 20 36 / 0.12);
 
   --gutter: 16px;
   --max: 1200px;
@@ -57,24 +57,24 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --surface: #11100f;
-    --sunken: #0c0b0a;
-    --card: #191716;
-    --ink: #f3efea;
-    --ink-2: #cfc7bf;
-    --ink-3: #a39a91;
-    --line: #2d2926;
-    --line-soft: #221f1d;
-    --control: #6e665f;
-    --copper: #e79a6b;
-    --copper-strong: #f2b48d;
-    --copper-soft: #2a1c14;
-    --on-copper: #11100f;
-    --live: #5ccb91;
-    --figure: #f6f4f1;
-    --contact-bg: #191716;
-    --contact-ink: #f3efea;
-    --contact-ink-2: #cfc7bf;
+    --surface: #0b1424;
+    --sunken: #070e1a;
+    --card: #111d33;
+    --ink: #f3f7f9;
+    --ink-2: #c4cfdb;
+    --ink-3: #94a3b8;
+    --line: #22314b;
+    --line-soft: #18253b;
+    --control: #5f6d82;
+    --accent: #00b37a;
+    --accent-strong: #33d19b;
+    --accent-soft: #0c2a26;
+    --on-accent: #0b1424;
+    --live: #33d19b;
+    --figure: #f6f8fa;
+    --contact-bg: #111d33;
+    --contact-ink: #f3f7f9;
+    --contact-ink-2: #c4cfdb;
     --shadow-1: 0 1px 2px rgb(0 0 0 / 0.4);
     --shadow-2: 0 18px 40px -18px rgb(0 0 0 / 0.7), 0 4px 12px -6px rgb(0 0 0 / 0.5);
     color-scheme: dark;
@@ -82,24 +82,24 @@
 }
 
 :root[data-theme="dark"] {
-  --surface: #11100f;
-  --sunken: #0c0b0a;
-  --card: #191716;
-  --ink: #f3efea;
-  --ink-2: #cfc7bf;
-  --ink-3: #a39a91;
-  --line: #2d2926;
-  --line-soft: #221f1d;
-  --control: #6e665f;
-  --copper: #e79a6b;
-  --copper-strong: #f2b48d;
-  --copper-soft: #2a1c14;
-  --on-copper: #11100f;
-  --live: #5ccb91;
-  --figure: #f6f4f1;
-  --contact-bg: #191716;
-  --contact-ink: #f3efea;
-  --contact-ink-2: #cfc7bf;
+  --surface: #0b1424;
+  --sunken: #070e1a;
+  --card: #111d33;
+  --ink: #f3f7f9;
+  --ink-2: #c4cfdb;
+  --ink-3: #94a3b8;
+  --line: #22314b;
+  --line-soft: #18253b;
+  --control: #5f6d82;
+  --accent: #00b37a;
+  --accent-strong: #33d19b;
+  --accent-soft: #0c2a26;
+  --on-accent: #0b1424;
+  --live: #33d19b;
+  --figure: #f6f8fa;
+  --contact-bg: #111d33;
+  --contact-ink: #f3f7f9;
+  --contact-ink-2: #c4cfdb;
   --shadow-1: 0 1px 2px rgb(0 0 0 / 0.4);
   --shadow-2: 0 18px 40px -18px rgb(0 0 0 / 0.7), 0 4px 12px -6px rgb(0 0 0 / 0.5);
   color-scheme: dark;
@@ -144,7 +144,7 @@ p { margin: 0; text-wrap: pretty; }
 ul { margin: 0; padding: 0; list-style: none; }
 
 :focus-visible {
-  outline: 2px solid var(--copper);
+  outline: 2px solid var(--accent);
   outline-offset: 3px;
   border-radius: var(--r-sm);
 }
@@ -187,7 +187,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   content: "";
   width: 24px;
   height: 2px;
-  background: var(--copper);
+  background: var(--accent);
   border-radius: var(--r-sm);
 }
 
@@ -218,9 +218,9 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .btn svg { width: 16px; height: 16px; flex: none; }
 .btn-primary { background: var(--ink); color: var(--surface); }
-.btn-primary:hover { background: var(--copper-strong); color: var(--on-copper); }
-.btn-copper { background: var(--copper); color: var(--on-copper); }
-.btn-copper:hover { background: var(--copper-strong); }
+.btn-primary:hover { background: var(--accent-strong); color: var(--on-accent); }
+.btn-accent { background: var(--accent); color: var(--on-accent); }
+.btn-accent:hover { background: var(--accent-strong); }
 .btn-outline { background: transparent; color: var(--ink); border-color: var(--control); }
 .btn-outline:hover { border-color: var(--ink); background: var(--card); }
 .btn-ghost { background: transparent; color: var(--ink-2); }
@@ -250,14 +250,14 @@ ul { margin: 0; padding: 0; list-style: none; }
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: var(--copper);
+  color: var(--accent);
   font-weight: 600;
   font-size: var(--t-sm);
   text-decoration: none;
   min-height: 44px;
 }
 .link-arrow svg { width: 16px; height: 16px; transition: transform 0.15s ease; }
-.link-arrow:hover { color: var(--copper-strong); }
+.link-arrow:hover { color: var(--accent-strong); }
 .link-arrow:hover svg { transform: translate(2px, -2px); }
 
 /* ---------- En-tête ---------- */
@@ -289,7 +289,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   min-height: 44px;
 }
 .brand-mark { width: 28px; height: 28px; color: var(--ink); flex: none; }
-.brand-mark .via { fill: var(--copper); }
+.brand-mark .via { fill: var(--accent); }
 .brand-name { white-space: nowrap; }
 
 .nav-desktop { display: none; }
@@ -365,7 +365,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   display: none;
 }
 .hero-traces .via { fill: var(--surface); stroke: var(--line); }
-.hero-traces .via-live { fill: var(--copper); stroke: none; }
+.hero-traces .via-live { fill: var(--accent); stroke: none; }
 .hero-grid {
   position: relative;
   display: grid;
@@ -378,7 +378,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   letter-spacing: -0.03em;
   max-width: 21ch;
 }
-.hero h1 em { font-style: normal; color: var(--copper); }
+.hero h1 em { font-style: normal; color: var(--accent); }
 .hero-lead {
   margin-top: 20px;
   font-size: var(--t-lg);
@@ -399,7 +399,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   font-weight: 500;
   color: var(--ink-2);
 }
-.hero-fields li::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--copper); }
+.hero-fields li::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
 .hero-ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 .hero-links { display: flex; flex-wrap: wrap; gap: 4px 20px; margin-top: 20px; }
 .hero-links a {
@@ -517,7 +517,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--copper);
+  color: var(--accent);
 }
 .section-head h2 { font-size: var(--t-2xl); letter-spacing: -0.025em; }
 .section-head p:not(.section-index) { color: var(--ink-2); max-width: 62ch; font-size: var(--t-md); }
@@ -624,7 +624,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   top: 0.55em;
   width: 8px;
   height: 8px;
-  border: 2px solid var(--copper);
+  border: 2px solid var(--accent);
   border-radius: 50%;
 }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 20px; }
@@ -694,7 +694,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   border: 1px solid var(--line);
   border-radius: var(--r-md);
 }
-.highlight .mono { font-size: var(--t-xs); color: var(--copper); letter-spacing: 0.06em; text-transform: uppercase; }
+.highlight .mono { font-size: var(--t-xs); color: var(--accent); letter-spacing: 0.06em; text-transform: uppercase; }
 .highlight h3 { margin-top: 12px; font-size: var(--t-lg); letter-spacing: -0.015em; }
 .highlight p { margin-top: 8px; color: var(--ink-2); font-size: var(--t-sm); line-height: 1.6; }
 
@@ -722,7 +722,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .project h3 { font-size: var(--t-lg); letter-spacing: -0.015em; }
 .project p { color: var(--ink-2); font-size: var(--t-sm); line-height: 1.6; }
 .project .chips { margin-top: auto; padding-top: 8px; }
-.project-cta { display: inline-flex; align-items: center; gap: 6px; color: var(--copper); font-weight: 600; font-size: var(--t-sm); margin-top: 4px; }
+.project-cta { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); font-weight: 600; font-size: var(--t-sm); margin-top: 4px; }
 .project-cta svg { width: 16px; height: 16px; }
 
 .all-repos { margin-top: 32px; }
@@ -789,7 +789,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .subhead { margin-top: 40px; font-size: var(--t-md); letter-spacing: -0.01em; }
 .principles { margin-top: 12px; display: grid; gap: 12px; }
 .principles li { padding-left: 22px; position: relative; color: var(--ink-2); font-size: var(--t-sm); }
-.principles li::before { content: ""; position: absolute; left: 2px; top: 0.6em; width: 10px; height: 2px; background: var(--copper); }
+.principles li::before { content: ""; position: absolute; left: 2px; top: 0.6em; width: 10px; height: 2px; background: var(--accent); }
 .principles strong { color: var(--ink); }
 
 .skills { margin-top: 12px; border-top: 1px solid var(--line); }
