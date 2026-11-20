@@ -241,6 +241,22 @@ def open_source(c: dict, base: str, contributions: list[dict]) -> str:
     <span class="project-cta">{e(o["view"])}{icon("arrow-up-right")}</span>
   </div>
 </a>""" for p in o["featured"])
+    boards = ""
+    if o.get("boards"):
+        board_cards = "".join(f"""
+<div class="project">
+  <div class="project-figure">{picture(base, b["img"], b["alt"], "(min-width: 1024px) 380px, (min-width: 768px) 46vw, 92vw")}</div>
+  <div class="project-body">
+    <h3>{e(b["name"])}</h3>
+    <p>{e(b["text"])}</p>
+    <div class="chips">{"".join(f'<span class="chip">{e(t)}</span>' for t in b["tags"])}</div>
+  </div>
+</div>""" for b in o["boards"])
+        boards = f"""
+<div class="contribs" id="boards">
+  <div class="contribs-head"><h3>{e(o["boards_title"])}</h3><p>{e(o["boards_intro"])}</p></div>
+</div>
+<div class="projects">{board_cards}</div>"""
     contrib = ""
     if contributions:
         states = {"merged": o["merged"], "open": o["open"], "closed": o["closed"]}
@@ -260,6 +276,7 @@ def open_source(c: dict, base: str, contributions: list[dict]) -> str:
   <div class="container">
     {section_head(o["index"], o["title"], o["intro"], "open-source-title")}
     <div class="projects">{cards}</div>
+    {boards}
     <p class="all-repos"><a class="btn btn-outline" href="{GITHUB}?tab=repositories">{icon("github")}{e(o["all_repos"])}{icon("arrow-up-right")}</a></p>
     {contrib}
   </div>

@@ -150,6 +150,8 @@ title = "Electronics, firmware and machine learning"
 intro = "Open source projects built from first principles, each with its tests, continuous integration and a clear statement of what has been validated."
 view = "View on GitHub"
 all_repos = "All repositories"
+boards_title = "Boards designed and assembled in Goma"
+boards_intro = "Real hardware from DTMS's workshop: Proteus design, etching, soldering and testing. Every board isolates the electronics from the mains side."
 contrib_title = "Contributions to other projects"
 contrib_intro = "Pull requests I have opened on projects maintained by others."
 merged = "Merged"
@@ -209,6 +211,28 @@ text = "CPU scheduling with Gantt charts, page replacement, the Banker's algorit
 tags = ["Python", "Operating systems"]
 img = "scheduler"
 alt = "Gantt charts of five CPU scheduling algorithms"
+
+[[open_source.boards]]
+name = "Connected monitoring board"
+text = "Arduino Nano for local logic, NodeMCU ESP8266 for Wi-Fi, OLED display, three isolation relays, ferrite filters and current sensing. It keeps running on a Li-ion battery during a power cut."
+tags = ["Arduino Nano", "ESP8266", "OLED", "Relays"]
+img = "board-supervision"
+alt = "Assembled monitoring board with Arduino Nano, ESP8266, OLED display and three relays"
+
+[[open_source.boards]]
+name = "ATS CPU board (source transfer)"
+text = "The brain of an automatic switch between grid, generator and solar, version 1.0 from December 2024: 32-pin surface-mount microcontroller, crystal, four optocouplers to read the sources with no electrical link, double-sided circuit."
+tags = ["SMD microcontroller", "Optocouplers", "Double-sided"]
+img = "board-ats"
+alt = "Assembled ATS CPU board with microcontroller, crystal, optocouplers and terminal blocks"
+
+[[open_source.boards]]
+name = "Timer prototype with display"
+text = "Perforated board with 16×2 LCD, Arduino Nano, relay, buzzer and four buttons: the base of automatic sirens and timers, before the circuit is etched."
+tags = ["16×2 LCD", "Arduino Nano", "Relay"]
+img = "board-prototype"
+alt = "Perforated board with LCD, Arduino Nano, relay and buttons"
+
 
 [teaching]
 index = "04 — Teaching"

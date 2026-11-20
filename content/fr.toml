@@ -150,6 +150,8 @@ title = "Électronique, firmware et apprentissage automatique"
 intro = "Des projets open source construits à partir des principes de base, chacun avec ses tests, son intégration continue et ce qui a été validé."
 view = "Voir sur GitHub"
 all_repos = "Tous les dépôts"
+boards_title = "Cartes conçues et assemblées à Goma"
+boards_intro = "Matériel réel de l'atelier de DTMS : dessin sous Proteus, gravure, soudure et essais. Chaque carte isole l'électronique de la partie secteur."
 contrib_title = "Contributions à d'autres projets"
 contrib_intro = "Les pull requests que j'ai proposées à des projets tenus par d'autres."
 merged = "Fusionnée"
@@ -209,6 +211,28 @@ text = "Ordonnancement du processeur avec diagrammes de Gantt, remplacement de p
 tags = ["Python", "Systèmes d'exploitation"]
 img = "scheduler"
 alt = "Diagrammes de Gantt de cinq algorithmes d'ordonnancement"
+
+[[open_source.boards]]
+name = "Carte de supervision connectée"
+text = "Arduino Nano pour la logique locale, NodeMCU ESP8266 pour le Wi-Fi, écran OLED, trois relais d'isolation, filtres à ferrite et mesure de courant. Elle continue de fonctionner sur batterie Li-ion pendant une coupure."
+tags = ["Arduino Nano", "ESP8266", "OLED", "Relais"]
+img = "board-supervision"
+alt = "Carte de supervision assemblée avec Arduino Nano, ESP8266, écran OLED et trois relais"
+
+[[open_source.boards]]
+name = "Carte CPU ATS (bascule de source)"
+text = "Cerveau d'une bascule automatique entre réseau, groupe et solaire, version 1.0 de décembre 2024 : microcontrôleur CMS à 32 broches, quartz, quatre optocoupleurs pour lire les sources sans lien électrique, circuit double face."
+tags = ["Microcontrôleur CMS", "Optocoupleurs", "Double face"]
+img = "board-ats"
+alt = "Carte CPU ATS assemblée avec microcontrôleur, quartz, optocoupleurs et borniers"
+
+[[open_source.boards]]
+name = "Prototype de minuterie à écran"
+text = "Plaque perforée avec écran LCD 16×2, Arduino Nano, relais, buzzer et quatre boutons : la base des sirènes automatiques et des minuteries, avant de graver le circuit."
+tags = ["LCD 16×2", "Arduino Nano", "Relais"]
+img = "board-prototype"
+alt = "Plaque perforée avec écran LCD, Arduino Nano, relais et boutons"
+
 
 [teaching]
 index = "04 — Formation"
