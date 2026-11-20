@@ -6,7 +6,7 @@ lang = "en"
 path = "/"
 og_locale = "en_US"
 title = "Guelord Mwenderwa — Embedded systems and AI engineer in Goma, DR Congo"
-description = "Embedded systems and AI engineer in Goma, DR Congo: electronics, ESP32 firmware, machine learning on microcontrollers; head of the IT department at DTMS, now Afronova, where he takes part in the web platforms in production. Trainer in embedded programming and web development."
+description = "Embedded systems and AI engineer in Goma, DR Congo: electronics, ESP32 firmware, machine learning on microcontrollers; head of the IT department at DTMS, where he takes part in the web platforms in production. Trainer in embedded programming and web development."
 job_title = "Embedded systems and AI engineer"
 alt_path = "/fr/"
 alt_lang = "fr"
@@ -31,7 +31,7 @@ email_cta = "Email me"
 eyebrow = "Embedded systems & AI engineer · Goma, DR Congo"
 title_before = "Electronics, firmware, AI and web platforms: "
 title_accent = "I build the whole system, from the circuit to the cloud."
-lead = "I design circuits and ESP32 firmware and bring machine learning onto microcontrollers. As head of the IT department at DTMS, now Afronova, in Goma, I work with the team on the web platforms that schools and businesses in the DR Congo use every day. I also design and teach courses in embedded programming and web development."
+lead = "I design circuits and ESP32 firmware and bring machine learning onto microcontrollers. As head of the IT department at DTMS, in Goma, I work with the team on the web platforms that schools and businesses in the DR Congo use every day. I also design and teach courses in embedded programming and web development."
 fields_label = "What I do"
 fields = ["Electronics", "Embedded firmware", "AI and machine learning", "Full-stack web", "DevOps", "Training"]
 cta_work = "See selected work"
@@ -40,7 +40,7 @@ portrait_alt = "Guelord Mwenderwa, seated, wearing a high-visibility vest"
 status = "Open to collaboration"
 
 [[hero.facts]]
-value = "3"
+value = "2"
 label = "platforms in production I have worked on"
 
 [[hero.facts]]
@@ -54,7 +54,7 @@ label = "courses designed and taught in Goma"
 [work]
 index = "01 — Selected work"
 title = "Platforms in production"
-intro = "Projects of DTMS, now Afronova, the company where I head the IT department. I worked on them as a member of the team, from the mockup to production."
+intro = "Projects of DTMS, the company where I head the IT department. I worked on them as a member of the team, from the mockup to production."
 role_label = "Role"
 did_label = "My contribution"
 live = "In production"
@@ -66,7 +66,7 @@ id = "mwangaza"
 number = "Case 01"
 name = "Mwangaza School"
 tagline = "School management for the DR Congo, built to keep working without internet."
-summary = "Students and families, fees in US dollars and Congolese francs, a cash desk that prints receipts, unpaid-fee follow-up, grades, deliberations and report cards, and a portal where parents follow payments on their phone. A DTMS product, now Afronova, shaped with a technical school in Goma."
+summary = "Students and families, fees in US dollars and Congolese francs, a cash desk that prints receipts, unpaid-fee follow-up, grades, deliberations and report cards, and a portal where parents follow payments on their phone. A DTMS product, shaped with a technical school in Goma."
 role = "Team member: product, engineering and operations"
 url = "https://mwangazaschool.com/"
 domain = "mwangazaschool.com"
@@ -89,43 +89,23 @@ gallery = [
 ]
 
 [[work.cases]]
-id = "afronova"
-number = "Case 02"
-name = "Afronova"
-tagline = "The new platform of DTMS, rebuilt under the Afronova name."
-summary = "DTMS, a Goma company working in networks, software, electronics and energy, became Afronova. The team rebuilt its platform in TypeScript, and I took part: a bilingual public website, an internal business application and a client portal."
-role = "Team member: design and full-stack engineering"
-url = "https://afronova-web.vercel.app/"
-domain = "afronova-web.vercel.app"
-bullets = [
-  "Redesigned every public page from mockups, on a design system of tokens with light and dark themes.",
-  "TypeScript monorepo: React and Vite front end, Express and Prisma API, PostgreSQL.",
-  "Internal business application and client portal on the same API, with role-based access.",
-  "176 automated tests on the web application, strict typing and linting in CI.",
-]
-stack = ["React", "TypeScript", "Vite", "Tailwind CSS", "Express", "Prisma", "PostgreSQL", "Vercel", "Render"]
-desktop = "afronova-site"
-desktop_alt = "Afronova home page: networks, software and energy that hold up in the field"
-mobile = "afronova-site-mobile"
-mobile_alt = "Afronova home page on a phone"
-
-[[work.cases]]
 id = "dtms"
-number = "Case 03"
+number = "Case 02"
 name = "DTMS"
-tagline = "The first generation of the platform, still online."
-summary = "Dynamic Technology Multi Services, now Afronova, works in IT, telecommunications, electronics and electrical installations. This first platform runs on Firebase modules for staff, projects, clients, operations and finance."
-role = "Team member: design and engineering"
+tagline = "The company's website and management app, on its own server."
+summary = "Dynamic Technology Multi Services, a Goma company in IT, networks, electronics and energy. The team rebuilt its platform on a server of its own: a bilingual public website, an internal management app (income, expenses, quotes, verifiable invoices) and a client area. I took part."
+role = "Team member: design and full-stack engineering"
 url = "https://dtms.site/"
 domain = "dtms.site"
 bullets = [
-  "Modular platform on Firebase Hosting and Firestore, with role-based access for each module.",
-  "Public site rebuilt with a technical-drawing design system, IBM Plex type and a dark theme.",
-  "Training portal for courses and learners, alongside the member area.",
+  "Bilingual public site rebuilt from mockups, in the colors of the company's brand book.",
+  "TypeScript monorepo: React and Vite front end, Express and Prisma API, PostgreSQL.",
+  "Internal management app with role-based access, usable offline.",
+  "Invoices and documents carry a reference number that can be checked online.",
 ]
-stack = ["JavaScript", "Firebase", "Firestore", "Supabase", "HTML", "CSS"]
+stack = ["React", "TypeScript", "Vite", "Tailwind CSS", "Express", "Prisma", "PostgreSQL", "Docker", "Caddy"]
 desktop = "dtms-site"
-desktop_alt = "DTMS home page: technology solutions that move your projects forward"
+desktop_alt = "DTMS home page: one team for your electricity, networks and software"
 mobile = "dtms-site-mobile"
 mobile_alt = "DTMS home page on a phone"
 
@@ -251,7 +231,7 @@ tags = ["HTML", "CSS", "JavaScript", "Python", "Django"]
 index = "05 — About"
 title = "Between circuits and code"
 paragraphs = [
-  "I hold a technical diploma in general electronics from ITIG Don Bosco in Goma, and I am completing a Licence in Computer Science, Artificial Intelligence track, at ISIG Goma. I head the IT department at DTMS, now Afronova, where I work with the team on Mwangaza School and the company's platforms.",
+  "I hold a technical diploma in general electronics from ITIG Don Bosco in Goma, and I am completing a Licence in Computer Science, Artificial Intelligence track, at ISIG Goma. I head the IT department at DTMS, where I work with the team on Mwangaza School and the company's platforms.",
   "My work covers the whole chain: the circuit and its firmware, the signal processing and machine learning that interpret the data, and the web platform people use to operate it, designed for the conditions of the eastern DR Congo. I also train others, in embedded programming and full-stack web development.",
 ]
 education_title = "Education"

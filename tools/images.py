@@ -21,8 +21,6 @@ IMAGES = {
     "mwangaza-grades": ("mz-gestion-notes-saisie.webp", (1184, 592), None),
     "mwangaza-unpaid": ("mz-gestion-impayes.webp", (1184, 592), None),
     "mwangaza-portal": ("mz-portail-accueil-mobile.webp", (390, 260), None),
-    "afronova-site": ("afronova-desktop.png", (1200, 720), None),
-    "afronova-site-mobile": ("afronova-mobile.png", (390, 260), None),
     "dtms-site": ("dtms-desktop.png", (1200, 720), None),
     "dtms-site-mobile": ("dtms-mobile.png", (390, 260), None),
     "edge-ai": ("tech-edge-ai-motor-fault-detector-confusion_matrix.png", (800, 400), 16 / 10),
